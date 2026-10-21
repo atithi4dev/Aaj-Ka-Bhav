@@ -38,6 +38,26 @@ if ! python3 -c "import fastapi" 2>/dev/null; then
 fi
 cd "$ROOT_DIR"
 
+# --- Port conflicts ---
+# Without this, a leftover server on either port makes our own child exit at once,
+# while the readiness check passes against the leftover, and `wait` returns immediately.
+port_open() {
+  python3 - "$1" <<'PY'
+import socket, sys
+s = socket.socket()
+s.settimeout(0.5)
+raise SystemExit(0 if s.connect_ex(("127.0.0.1", int(sys.argv[1]))) == 0 else 1)
+PY
+}
+if port_open 8000; then
+  echo "ERROR: port 8000 is already in use. Stop the other process first." >&2
+  exit 1
+fi
+if port_open 5173; then
+  echo "ERROR: port 5173 is already in use. Stop the other process first." >&2
+  exit 1
+fi
+
 # --- Start backend ---
 echo "Starting FastAPI backend on port 8000..."
 cd "$AGRI_DIR"
@@ -51,6 +71,17 @@ cd "$FRONTEND_DIR"
 python3 -m http.server 5173 > "$ROOT_DIR/.merged-frontend.log" 2>&1 &
 FRONTEND_PID=$!
 cd "$ROOT_DIR"
+
+# --- Make sure both children actually survived their first second ---
+sleep 1
+if ! kill -0 "$BACKEND_PID" 2>/dev/null; then
+  echo "ERROR: backend exited during startup. See $ROOT_DIR/.merged-backend.log" >&2
+  exit 1
+fi
+if ! kill -0 "$FRONTEND_PID" 2>/dev/null; then
+  echo "ERROR: frontend exited during startup. See $ROOT_DIR/.merged-frontend.log" >&2
+  exit 1
+fi
 
 # --- Wait for readiness ---
 echo "Waiting for services to be ready..."
