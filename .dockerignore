@@ -1,0 +1,15 @@
+.git
+.github
+__pycache__
+*.py[cod]
+*$py.class
+*.log
+.pytest_cache
+.venv
+venv
+env
+node_modules
+.DS_Store
+Thumbs.db
+*.bat
+*.sh

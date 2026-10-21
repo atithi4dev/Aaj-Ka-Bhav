@@ -4,8 +4,11 @@
 // its responses into the shape logic.js expects:
 //   { commodity, state, district, market, date, modal_price }
 // The backend (agri/) must not be modified; this module only reads from it.
-
-export const BASE = 'http://localhost:8000/api/v1';
+export const BASE = (typeof window !== 'undefined' && window.__API_BASE__) || (
+  typeof location !== 'undefined' && location.origin && location.origin.includes(':5173')
+    ? 'http://localhost:8000/api/v1'
+    : '/api/v1'
+);
 
 const DAY = 86400000;
 const toUTC = (s) => { const [y, m, d] = s.split('-').map(Number); return Date.UTC(y, m - 1, d); };

@@ -1,5 +1,7 @@
+from pathlib import Path
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
+from fastapi.staticfiles import StaticFiles
 
 from app.api.routes.health import router as health_router
 from app.api.routes.locations import router as locations_router
@@ -25,7 +27,12 @@ app.include_router(health_router, prefix="/api/v1", tags=["health"])
 app.include_router(locations_router, prefix="/api/v1", tags=["locations"])
 app.include_router(prices_router, prefix="/api/v1", tags=["prices"])
 
+# Serve static frontend if available, otherwise fallback to root API info
+frontend_path = Path(__file__).resolve().parents[2] / "frontend"
+if frontend_path.exists():
+    app.mount("/", StaticFiles(directory=str(frontend_path), html=True), name="frontend")
+else:
+    @app.get("/", tags=["root"])
+    def root():
+        return {"message": "Agricultural Trade API", "docs": "/docs", "health": "/api/v1/health"}
 
-@app.get("/", tags=["root"])
-def root():
-    return {"message": "Agricultural Trade API", "docs": "/docs", "health": "/api/v1/health"}
