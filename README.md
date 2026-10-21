@@ -2,7 +2,7 @@
 
 **The mandi rate, in the farmer's hand.** A Hindi-first, phone-first price app that answers one question in seconds: *what is my crop worth today, and where will I get the most for it?*
 
-Built by **ISELL**.
+Built by **team kitty**.
 
 ---
 
