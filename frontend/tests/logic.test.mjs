@@ -4,15 +4,15 @@ import assert from 'node:assert/strict';
 import { readFileSync } from 'node:fs';
 import { setData, getLatestRate, getDirection, getNearbyMandis, getSeries, getHeadlineMarket, getReferenceDate, getDistricts } from '../logic.js';
 
-const row = (market, date, modal_price, district = 'D1', state = 'S1', commodity = 'Wheat') =>
-  ({ commodity, state, district, market, date, modal_price, arrivals: null });
+const row = (market, date, modal_price, district = 'D1', state = 'S1', commodity = 'Wheat', arrivals = null) =>
+  ({ commodity, state, district, market, date, modal_price, arrivals });
 
 test('missing day is "no_rate", last known rate is returned separately, never carried forward', () => {
   setData([row('A', '2026-10-18', 2400), row('A', '2026-10-19', 2410), row('B', '2026-10-19', 2500), row('B', '2026-10-20', 2520), row('A', '2026-10-20', null)]);
   const a = getLatestRate('Wheat', { state: 'S1', district: 'D1', market: 'A' });
   assert.equal(a.status, 'no_rate');
   assert.equal(a.price, null);
-  assert.deepEqual(a.lastKnown, { price: 2410, date: '2026-10-19' });
+  assert.deepEqual(a.lastKnown, { price: 2410, date: '2026-10-19', arrivals: null });
   assert.equal(a.ageDays, 1);
   assert.equal(getLatestRate('Wheat', { state: 'S1', district: 'D1', market: 'B' }).status, 'reported');
 });
@@ -76,6 +76,16 @@ test('headline market prefers the best reported rate in the own district', () =>
   setData([row('X', '2026-10-20', 100, 'D1'), row('Y', '2026-10-20', 120, 'D1'), row('Z', '2026-10-20', 500, 'D2')], { 'S1|D1': ['D2'] });
   const { rows } = getNearbyMandis('Wheat', { state: 'S1', district: 'D1' });
   assert.equal(getHeadlineMarket(rows).market, 'Y');
+});
+
+test('arrivals pass through on a reported rate, and never on a no_rate/never-reported one', () => {
+  setData([row('A', '2026-10-19', 2400, 'D1', 'S1', 'Wheat', 180), row('A', '2026-10-20', null, 'D1', 'S1', 'Wheat', 0), row('B', '2026-10-20', 2500, 'D1', 'S1', 'Wheat', 60)]);
+  const a = getLatestRate('Wheat', 'S1|D1|A');
+  assert.equal(a.status, 'no_rate');
+  assert.equal(a.arrivals, null);
+  assert.equal(a.lastKnown.arrivals, 180);
+  const b = getLatestRate('Wheat', 'S1|D1|B');
+  assert.equal(b.arrivals, 60);
 });
 
 test('demo dataset: every edge case is present', () => {

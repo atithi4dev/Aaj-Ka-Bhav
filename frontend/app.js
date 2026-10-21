@@ -10,7 +10,7 @@ const CONFIG = {
   STALE_DAYS: 3,     // product decision: banner when the newest report is older than this
 };
 
-const state = { lang: 'hi', crop: null, district: null, market: null, crops: [], places: {}, geo: [], nearby: { rows: [], refDate: null } };
+const state = { lang: 'hi', crop: null, district: null, market: null, crops: [], cropQuery: '', places: {}, geo: [], nearby: { rows: [], refDate: null } };
 const $ = (id) => document.getElementById(id);
 
 /* ---------- small helpers ---------- */
@@ -50,6 +50,19 @@ const ARROW = {
   flat: '<svg viewBox="0 0 24 24" aria-hidden="true"><rect x="2" y="6" width="20" height="4.5" rx="1.5" fill="currentColor"/><rect x="2" y="13.5" width="20" height="4.5" rx="1.5" fill="currentColor"/></svg>',
   none: '<svg viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="10.5" width="14" height="4" rx="1.5" fill="currentColor"/></svg>',
 };
+
+const SPEAK_ICON = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9v6h4l5 5V4L8 9Z" fill="currentColor"/><path d="M16.5 8.5a5 5 0 0 1 0 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" fill="none"/><path d="M19 6a9 9 0 0 1 0 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" fill="none" opacity=".6"/></svg>';
+
+/* Read the rate aloud, for someone who does not read comfortably. No network, no backend. */
+function speakRate(row) {
+  if (!('speechSynthesis' in window)) return;
+  const crop = state.crops.find((c) => c.name === state.crop);
+  const text = L('speakRate', { crop: crop ? cropName(crop) : state.crop, mandi: mandiName(row), price: fmtNum(row.price) });
+  const u = new SpeechSynthesisUtterance(text);
+  u.lang = state.lang === 'hi' ? 'hi-IN' : 'en-IN';
+  speechSynthesis.cancel();
+  speechSynthesis.speak(u);
+}
 
 /* ---------- boot ---------- */
 
@@ -115,6 +128,7 @@ function bindStatic() {
   $('district').addEventListener('change', (e) => {
     setDistrict({ state: $('state').value, district: e.target.value });
   });
+  $('cropSearch').addEventListener('input', (e) => { state.cropQuery = e.target.value; renderCrops(); });
   window.addEventListener('online', renderNotes);
   window.addEventListener('offline', renderNotes);
   let deferred = null;
@@ -136,6 +150,9 @@ function renderChrome() {
   $('appName').textContent = L('appName');
   $('tagline').textContent = L('tagline');
   $('cropLabel').textContent = L('pickCrop');
+  $('cropSearch').placeholder = L('searchCrop');
+  $('cropSearch').setAttribute('aria-label', L('searchCrop'));
+  $('cropEmpty').textContent = L('noCropMatch');
   $('stateLabel').textContent = L('pickState');
   $('districtLabel').textContent = L('pickDistrict');
   $('nearbyTitle').textContent = L('nearbyTitle');
@@ -147,13 +164,22 @@ function renderChrome() {
   document.querySelectorAll('.lang button').forEach((b) => b.setAttribute('aria-pressed', String(b.dataset.lang === state.lang)));
 }
 
+/* Matches the crop's display name, English/Hindi labels, or any known transliteration (data.json: variants). */
+function cropMatches(c, query) {
+  const needle = query.trim().toLowerCase();
+  if (!needle) return true;
+  return [c.name, c.en, c.hi, ...(c.variants || [])].filter(Boolean).some((s) => s.toLowerCase().includes(needle));
+}
+
 function renderCrops() {
   const box = $('crops');
-  box.replaceChildren(...state.crops.map((c) =>
+  const shown = state.crops.filter((c) => cropMatches(c, state.cropQuery));
+  box.replaceChildren(...shown.map((c) =>
     h('button', {
       type: 'button', class: 'crop', 'aria-pressed': String(c.name === state.crop),
       onclick: () => { state.crop = c.name; state.market = null; store.set('crop', c.name); renderCrops(); renderAll(); },
     }, h('span', { html: cropIcon(c.name, c.hi) }), cropName(c))));
+  $('cropEmpty').hidden = shown.length > 0;
 }
 
 /* Every state and union territory, with well-known districts (data/data.json: geography.states),
@@ -245,12 +271,16 @@ function renderRate() {
   const where = h('p', { class: 'rate__where' }, mandiName(row), ' ', h('span', {}, '· ' + districtName(row)));
 
   if (row.status === 'reported') {
+    const listen = 'speechSynthesis' in window
+      ? h('button', { type: 'button', class: 'rate__listen', onclick: () => speakRate(row) }, h('span', { html: SPEAK_ICON }), L('listen'))
+      : null;
     area.replaceChildren(h('div', { class: 'rate rate--on' },
       where,
-      h('p', { class: 'rate__kicker' }, `${L('latestReported')} · ${D(row.date)}`),
+      h('p', { class: 'rate__kicker' }, `${L('latestReported')} · ${D(row.date)}` + (row.arrivals ? ` · ${L('arrivals', { n: fmtNum(row.arrivals) })}` : '')),
       h('p', { class: 'rate__num', 'aria-label': `${fmtNum(row.price)} ${L('perQuintal')}` }, h('small', { 'aria-hidden': 'true' }, '₹'), h('span', {}, fmtNum(row.price))),
       h('p', { class: 'rate__unit' }, L('perQuintal')),
-      dirBlock(row)));
+      dirBlock(row),
+      listen));
     return;
   }
 

@@ -13,25 +13,20 @@
     {
       "src": "icons/Rupee.webp",
       "sizes": "192x192",
-      "type": "image/png",
+      "type": "image/webp",
       "purpose": "any"
     },
     {
       "src": "icons/Rupee.webp",
       "sizes": "512x512",
-      "type": "image/png",
+      "type": "image/webp",
       "purpose": "any"
     },
     {
       "src": "icons/Rupee.webp",
       "sizes": "512x512",
-      "type": "image/png",
+      "type": "image/webp",
       "purpose": "maskable"
-    },
-    {
-      "src": "icons/Rupee.webp",
-      "sizes": "any",
-      "type": "image/svg+xml"
     }
   ]
 }

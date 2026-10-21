@@ -8,7 +8,7 @@
   <meta name="description" content="Mandi price checker for farmers. Works offline. Hindi first.">
   <meta name="theme-color" content="#14532D">
   <link rel="manifest" href="manifest.webmanifest">
-  <link rel="icon" href="icons/Rupee.webp" type="image/svg+xml">
+  <link rel="icon" href="icons/Rupee.webp" type="image/webp">
   <link rel="apple-touch-icon" href="icons/Rupee.webp">
   <link rel="stylesheet" href="styles.css">
 </head>
@@ -41,7 +41,9 @@
 
       <section class="pick" aria-labelledby="cropLabel">
         <h2 class="label" id="cropLabel">फसल चुनें</h2>
+        <input type="search" class="crop-search" id="cropSearch" autocomplete="off" enterkeyhint="search">
         <div class="crops" id="crops"></div>
+        <p class="crop-empty" id="cropEmpty" hidden></p>
         <div class="geo">
           <div><label class="label" for="state" id="stateLabel">अपना राज्य</label>
             <div class="select"><select id="state"></select></div>

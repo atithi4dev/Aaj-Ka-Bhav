@@ -73,6 +73,9 @@ button { cursor: pointer; }
 .label:not(:first-child) { margin-top: 16px; }
 
 /* crop picker */
+.crop-search { display: block; width: 100%; min-height: 52px; margin-bottom: 10px; padding: 0 16px; border: 3px solid var(--surface-2); border-radius: 12px; background: var(--white); font-size: 17px; font-weight: 500; }
+.crop-search::placeholder { color: var(--ink-2); }
+.crop-empty { padding: 14px; border-radius: 12px; background: var(--surface); font-weight: 500; color: var(--ink-2); }
 .crops { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 8px; }
 .crop { display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 2px; min-height: 72px; padding: 6px 2px; border: 3px solid transparent; border-radius: 12px; background: var(--surface); font-weight: 800; font-size: 15px; line-height: 1.15; text-align: center; }
 .crop svg { width: 32px; height: 32px; display: block; }
@@ -105,6 +108,10 @@ button { cursor: pointer; }
 .rate__dir--down svg, .rate__dir--down b { color: var(--down-dark); }
 .rate__dir--none b { font-size: 18px; font-weight: 800; }
 .rate__dir--none svg { opacity: .7; }
+
+.rate__listen { display: flex; align-items: center; justify-content: center; gap: 10px; width: 100%; margin-top: 16px; min-height: 52px; border: 0; border-radius: 12px; background: rgba(243, 245, 239, .16); color: var(--on-accent); font-weight: 800; font-size: 17px; }
+.rate__listen svg { width: 24px; height: 24px; flex: none; }
+.rate__listen:active { background: rgba(243, 245, 239, .28); }
 
 .rate__big { margin-top: 10px; font-size: clamp(36px, 10.5vw, 48px); line-height: 1.1; font-weight: 800; }
 .rate__sub { margin-top: 8px; font-size: 18px; font-weight: 500; }

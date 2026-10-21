@@ -48,6 +48,11 @@ export const STRINGS = {
     selectedMandi: 'मंडी',
     langName: 'हिन्दी',
     seeThis: 'इस मंडी का भाव देखें',
+    listen: 'भाव सुनें',
+    speakRate: '{crop}, {mandi}। आज का भाव {price} रुपये प्रति क्विंटल।',
+    arrivals: '{n} क्विंटल की आवक',
+    searchCrop: 'फसल खोजें',
+    noCropMatch: 'कोई फसल नहीं मिली',
   },
   en: {
     appName: 'Aaj Ka Bhav',
@@ -95,6 +100,11 @@ export const STRINGS = {
     selectedMandi: 'Mandi',
     langName: 'English',
     seeThis: 'Show this mandi’s rate',
+    listen: 'Listen to rate',
+    speakRate: '{crop}, {mandi}. Today’s rate is {price} rupees per quintal.',
+    arrivals: '{n} quintals arrived',
+    searchCrop: 'Search crop',
+    noCropMatch: 'No crop matches',
   },
 };
 

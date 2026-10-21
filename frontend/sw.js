@@ -1,6 +1,6 @@
 // sw.js: cache-first. After the first visit the app opens with no signal.
 // Bump VERSION whenever any cached file or data/*.json changes, or phones keep the old copy.
-const VERSION = 'abh-v4';
+const VERSION = 'abh-v6';
 const SHELL = [
   './', 'index.html', 'styles.css', 'app.js', 'logic.js', 'i18n.js', 'icons.js',
   'manifest.webmanifest', 'icons/Rupee.webp', 'icons/Rupee.webp', 'icons/Rupee.webp', 'icons/Rupee.webp',

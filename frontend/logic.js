@@ -32,8 +32,9 @@ export function setData(records, nearby = {}) {
     if (!markets.has(key)) markets.set(key, { info: { state: r.state, district: r.district, market: r.market, key }, byDate: new Map() });
     const entry = markets.get(key);
     const price = isReported(r.modal_price) ? r.modal_price : null;
+    const arrivals = typeof r.arrivals === 'number' && Number.isFinite(r.arrivals) && r.arrivals >= 0 ? r.arrivals : null;
     const had = entry.byDate.get(r.date);
-    if (had === undefined || (had === null && price !== null)) entry.byDate.set(r.date, price);
+    if (had === undefined || (had.price === null && price !== null)) entry.byDate.set(r.date, { price, arrivals });
     if (price !== null) {
       const cur = REF.get(r.commodity);
       if (!cur || r.date > cur) REF.set(r.commodity, r.date);
@@ -41,7 +42,7 @@ export function setData(records, nearby = {}) {
   }
   for (const markets of CROP.values()) {
     for (const e of markets.values()) {
-      e.rows = [...e.byDate].map(([date, price]) => ({ date, price })).sort((a, b) => (a.date < b.date ? -1 : 1));
+      e.rows = [...e.byDate].map(([date, v]) => ({ date, price: v.price, arrivals: v.arrivals })).sort((a, b) => (a.date < b.date ? -1 : 1));
     }
   }
 }
@@ -68,19 +69,21 @@ const reportedRows = (e) => e.rows.filter((r) => r.price !== null);
 
 /**
  * Latest reported rate for one market.
- *  status 'reported' : has a price on the reference date. price/date are set.
+ *  status 'reported' : has a price on the reference date. price/date/arrivals are set.
  *  status 'no_rate'  : no price on the reference date. price is null, lastKnown holds the older rate (label it old).
  *  status 'none'     : this market has never reported this commodity.
+ * arrivals (quantity traded that day, in the source's own unit) is informational only: never used to
+ * judge, hide or adjust a price, only to show how many deals it is based on. null means not reported.
  */
 export function getLatestRate(commodity, market) {
   const e = entryOf(commodity, market);
   const refDate = getReferenceDate(commodity);
   const rep = e ? reportedRows(e) : [];
   const last = rep.length ? rep[rep.length - 1] : null;
-  if (!last) return { status: 'none', price: null, date: null, refDate, lastKnown: null, ageDays: null };
-  const lastKnown = { price: last.price, date: last.date };
-  if (last.date === refDate) return { status: 'reported', price: last.price, date: last.date, refDate, lastKnown, ageDays: 0 };
-  return { status: 'no_rate', price: null, date: null, refDate, lastKnown, ageDays: refDate ? daysBetween(last.date, refDate) : null };
+  if (!last) return { status: 'none', price: null, date: null, refDate, lastKnown: null, ageDays: null, arrivals: null };
+  const lastKnown = { price: last.price, date: last.date, arrivals: last.arrivals };
+  if (last.date === refDate) return { status: 'reported', price: last.price, date: last.date, refDate, lastKnown, ageDays: 0, arrivals: last.arrivals };
+  return { status: 'no_rate', price: null, date: null, refDate, lastKnown, ageDays: refDate ? daysBetween(last.date, refDate) : null, arrivals: null };
 }
 
 /**
@@ -107,7 +110,7 @@ export function getSeries(commodity, market, n = 7) {
   const out = [];
   for (let i = n - 1; i >= 0; i--) {
     const date = addDays(ref, -i);
-    out.push({ date, price: e.byDate.has(date) ? e.byDate.get(date) : null });
+    out.push({ date, price: e.byDate.has(date) ? e.byDate.get(date).price : null });
   }
   return out;
 }
