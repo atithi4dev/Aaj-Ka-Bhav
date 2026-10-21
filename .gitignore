@@ -1,0 +1,51 @@
+# Dependencies
+node_modules/
+.npm/
+
+# Python junk
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+env/
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+
+# Build output
+dist/
+build/
+.cache/
+.parcel-cache/
+.vite/
+.next/
+coverage/
+*.tsbuildinfo
+
+# Logs
+*.log
+npm-debug.log*
+
+# Secrets (never commit your data.gov.in API key)
+.env
+.env.*
+!.env.example
+
+# OS and editor junk
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Scratch files
+try.js
+tmp/
+mandi_datagov.csv
+mandi_prices.csv
+MERGED.md
+PPT_CONTENT.md
