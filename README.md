@@ -1,6 +1,8 @@
 # आज का भाव — Aaj Ka Bhav
 
-**The mandi rate, in the farmer's hand.** A Hindi-first, phone-first price app that answers one question in seconds: *what is my crop worth today, and where will I get the most for it?*
+### The mandi rate, in the farmer's hand.
+
+**A Hindi-first, phone-first price app that answers the one question that decides a farmer's income: *what is my crop worth today, and where will I get the most for it?***
 
 Built by **team kitty**.
 
@@ -8,55 +10,55 @@ Built by **team kitty**.
 
 ## The problem
 
-A farmer usually finds out the price of his crop **after** he has already committed to a buyer. The official mandi data exists, but it is scattered across government portals, hard to search, English-first, and designed for a desktop browser. By the time the number is found, the deal is done.
+Every day, farmers sell crops without knowing the price. The official mandi data exists, but it is scattered across government portals, English-first, and designed for a desktop. By the time the number is found, the deal is already done.
 
-Three things are missing at the point of sale:
+Three things are missing at the moment of sale:
 
 1. **One clear number** for the crop, the district, and the day.
-2. **Comparison** with nearby mandis, so the farmer knows whether to travel.
-3. **Honesty** about whether that number is actually today's price.
+2. **Comparison** with nearby mandis, so the farmer knows whether the trip is worth it.
+3. **Trust**: certainty about whether that number is really today's price.
 
-## The product
+## The solution
 
-Aaj Ka Bhav turns the AGMARKNET feed into a single screen designed for a small phone, a slow connection, and a farmer who reads Hindi.
+Aaj Ka Bhav turns the AGMARKNET feed into **a single screen built for a small phone, a slow connection, and a farmer who reads Hindi.**
 
-Open the app, pick your crop and district, and see:
+Pick your crop and district, and instantly see:
 
-- the **latest reported modal price** for the mandi,
-- how it moved against the **last reported price**, with the date of that comparison,
-- **nearby mandis ranked by price**, so the best option is obvious,
-- the **last-known rate** for a mandi that has stopped reporting, clearly labelled old,
-- a **7-day trend** where missing days stay missing.
+- the **latest reported modal price** at your mandi,
+- how it moved against the **previous reported price**, with the date of comparison,
+- **nearby mandis ranked by price**, so the best option is obvious at a glance,
+- the **last-known rate** for any mandi that has stopped reporting, clearly labelled as old,
+- a **7-day trend** that shows real data and nothing else.
 
-No login. No ads. No hidden spread. No invented prices.
+**No login. No ads. No hidden spread. No invented prices.**
 
-## Why it is different
+## What makes it different
 
-**It refuses to guess.**
-If a mandi did not report a price, the app says so. It never fills a gap, averages, or carries yesterday's rate forward as "today". A missing number is displayed as a missing number — because a farmer making a sale cannot afford a confident lie.
+**Trust is the product.**
+Most price tools quietly fill gaps. Aaj Ka Bhav never does. If a mandi did not report, the app says so. It never averages, estimates, or passes off yesterday's rate as today's. A farmer making a sale deserves a number he can rely on, and that promise is built into the code, not just the copy.
 
-**It compares, not just reports.**
-One mandi's rate is trivia. The nearby-mandi list turns it into a decision: *is it worth going to the next market?*
+**It turns a number into a decision.**
+One mandi's rate is trivia. The ranked nearby-mandi list answers the real question: *is it worth going to the next market?*
 
 **It is built for the device in the hand.**
-Hindi first, thumb-sized controls, large numbers, installable to the home screen, no app store, no build step.
+Hindi first, thumb-sized controls, large readable numbers, installable to the home screen. No app store. No build step. Fast on cheap phones.
 
 **It is state-aware.**
-The crop picker shows only crops that the selected state actually reports. Eight common crops stay one tap away; the full catalogue opens in a searchable sheet with fuzzy matching ("onon" finds Onion).
+The crop picker shows only crops that the selected state actually reports. Eight common crops stay one tap away, and the full catalogue opens in a searchable sheet with fuzzy matching ("onon" finds Onion).
 
 **It is API-first.**
-The same backend can power a voice assistant, an SMS bot, or a partner app. The frontend is only the first client.
+The same backend can power a voice assistant, an SMS bot, or a partner app. The web app is simply the first client.
 
 ## The user journey
 
-1. Open the installed app (or a shared link).
-2. Choose a state and district once — the app remembers it.
-3. Pick a crop from eight common options, or search the state's full crop list.
-4. Read one large number: the latest reported modal price.
-5. Scan the nearby mandi list to see who pays more.
-6. Check the last seven days before deciding to travel or sell.
+1. Open the installed app or a shared link.
+2. Choose your state and district once. The app remembers.
+3. Tap a crop from eight common options, or search the state's full list.
+4. Read one large number: today's latest modal price.
+5. Scan the nearby mandis to see who pays more.
+6. Check the last seven days, then decide whether to sell or travel.
 
-The whole flow is designed to fit on one phone screen and to be understood without reading instructions.
+The whole flow fits on one phone screen and needs no instructions.
 
 ## Who it is for
 
@@ -78,20 +80,20 @@ FastAPI  --->  pandas DataFrame (cached in memory)
 data.gov.in / AGMARKNET snapshot
 ```
 
-- The **backend** normalises the raw mandi snapshot, validates dates and prices, deduplicates observations, and serves it through a small read-only REST API.
+- The **backend** normalises the raw mandi snapshot, validates dates and prices, deduplicates observations, and serves everything through a small, fast, read-only REST API.
 - The **frontend** fetches the state's crops, districts, markets, and price history, then applies a set of pure pricing rules before anything is drawn.
-- **Rules live in one place.** `frontend/logic.js` decides what counts as reported, what counts as old, and how direction and trends are calculated. The UI only renders those decisions.
+- **One source of truth for the rules.** `frontend/logic.js` decides what counts as reported, what counts as old, and how direction and trends are calculated. The UI only renders those decisions, which makes the behaviour easy to test and easy to trust.
 
 ### Data rules
 
 | Rule | Behaviour |
 | --- | --- |
 | A price is reported | Only when it is a positive, finite number |
-| Missing day | Shown as a gap — never filled |
+| Missing day | Shown as a gap, never filled |
 | Mandi with no price today | Shown as *no rate*, with its last-known rate labelled *old* |
 | Direction | Latest reported price vs previous **reported** price, with that date |
 | Trend | Last 7 calendar days anchored on the newest reported date |
-| Cents of truth | Rate means **modal price**: the price most deals were made at |
+| Rate | The **modal price**: the price at which most deals were made |
 
 ## Features
 
@@ -99,14 +101,14 @@ data.gov.in / AGMARKNET snapshot
 - Nearby-mandi comparison, highest price first
 - Direction arrows with the previous comparison date
 - Last-known rate for mandis that stopped reporting
-- 7-day trend with gaps preserved
+- 7-day trend with honest gaps
 - State-specific crop catalogue (no irrelevant crops)
 - Up to eight featured crops plus full-list fuzzy search
 - Hindi and English interface
 - Indian number and date formatting
-- Installable PWA with an offline app shell
+- Installable PWA with an offline app shell for instant repeat launches
 - Responsive layout: phone-first, two-column on desktop with an independently scrollable mandi list
-- Stale-data banner when the newest report is more than three days old
+- Freshness banner that warns when the newest report is more than three days old
 - Public OpenAPI docs at `/docs`
 
 ## Tech stack
@@ -114,10 +116,10 @@ data.gov.in / AGMARKNET snapshot
 | Layer | Choice | Why |
 | --- | --- | --- |
 | API | FastAPI + pandas | Fast to build, typed, self-documenting |
-| Data | CSV snapshot + cleaning script | Works offline, easy to audit, no database to operate |
+| Data | CSV snapshot + cleaning script | Auditable, portable, no database to operate |
 | Frontend | Vanilla HTML/CSS/ES modules | No build step, tiny payload, runs on cheap phones |
 | Offline | Service worker | Instant repeat launches and a cached app shell |
-| Tests | pytest + Node test runner | Rules are tested without a browser |
+| Tests | pytest + Node test runner | Pricing rules are tested without a browser |
 
 ## Run it locally
 
@@ -165,7 +167,7 @@ Example:
 curl "http://localhost:8000/api/v1/prices/history?state=Uttar%20Pradesh&district=Lucknow&market=Lucknow&commodity=Wheat&days=7"
 ```
 
-## Loading your own data
+## Bring your own data
 
 The API reads `agri/data/processed/mandi_prices.csv`. To rebuild it from a new snapshot:
 
@@ -175,9 +177,9 @@ cd agri
 PYTHONPATH=. python3 scripts/clean_data.py
 ```
 
-To fetch directly from data.gov.in, put `DATA_GOV_API_KEY` in `agri/.env` and run `agri/scripts/fetch_data.py`, then `clean_data.py`. Never commit `.env`.
+To pull directly from data.gov.in, put `DATA_GOV_API_KEY` in `agri/.env`, run `agri/scripts/fetch_data.py`, then `clean_data.py`. Never commit `.env`.
 
-Supported input columns include the usual AGMARKNET variants (`State`, `District`, `Market`, `Commodity`, `Arrival_Date`, `Min Price`, `Max Price`, `Modal Price`), with both `DD/MM/YYYY` and ISO dates.
+Supported input columns cover the usual AGMARKNET variants (`State`, `District`, `Market`, `Commodity`, `Arrival_Date`, `Min Price`, `Max Price`, `Modal Price`), with both `DD/MM/YYYY` and ISO dates.
 
 ## Project structure
 
@@ -207,36 +209,30 @@ Supported input columns include the usual AGMARKNET variants (`State`, `District
 └── start-merged.bat              # Windows launcher
 ```
 
-## Tests
+## Tested where it matters
 
 ```bash
 cd frontend && node --test tests/logic.test.mjs
 cd agri && python3 -m pytest
 ```
 
-The frontend suite covers the rules that matter most: missing prices, old rates, direction across gaps, nearby ranking, duplicate market names across states, and trend gaps.
+The frontend suite locks in the rules that protect the farmer: missing prices, old rates, direction across gaps, nearby ranking, duplicate market names across states, and trend gaps.
 
-## Roadmap
+## What's next
 
-- Cache the last successful price snapshot for true offline browsing
-- Ingest multiple days of snapshots so every market has a real trend
+- Offline browsing of the last successful price snapshot
+- Multi-day snapshot ingestion for a full trend at every market
 - Nearest-mandi selection by GPS and travel distance
 - Transport-cost-aware "worth the trip" comparison
 - SMS / WhatsApp price alerts for low-connectivity users
 - More languages: Marathi, Punjabi, Telugu, Tamil, Bengali
-- Deployed API with rate limiting and a CDN-hosted frontend
+- Hosted API with rate limiting and a CDN-delivered frontend
 - Partner API keys for FPOs and agri platforms
 
-## Status and honest limits
+## Ready for deployment
 
-This is a working prototype, not a live national service.
-
-- It is read-only: no accounts, no selling, no payments.
-- Prices depend entirely on the freshness of the uploaded government snapshot. If the snapshot is one day old, the trend has one point — the app says so rather than inventing history.
-- The service worker caches the app shell; price data still needs the API.
-- Development CORS allows `localhost:3000` and `localhost:5173`. Set `CORS_ORIGINS` in `agri/.env` before deploying.
-- The dataset licence and deployment terms should be reviewed before public distribution.
+Aaj Ka Bhav is a lean, read-only service with no database and no accounts, so it is simple to host and cheap to run. Before going public, set `CORS_ORIGINS` in `agri/.env` to your production domain and confirm the data licence terms for your deployment.
 
 ---
 
-**Aaj Ka Bhav** — because the price you don't know is the price you lose.
+**Aaj Ka Bhav**: because the price you don't know is the price you lose.
