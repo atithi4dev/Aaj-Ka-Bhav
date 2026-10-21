@@ -1,0 +1,5668 @@
+{
+ "_note": "Single data bundle for Aaj Ka Bhav. One file instead of five -- states/districts carry their Hindi names inline (no separate lookup-by-name table to keep in sync). market_hi is a small translation dict because market names repeat across many price rows and states. nearby_districts is DEMO adjacency; a missing district falls back to every district in its state.",
+ "commodities": [
+  {
+   "name": "Wheat",
+   "hi": "गेहूँ",
+   "en": "Wheat",
+   "variants": [
+    "gehu",
+    "gehun",
+    "wheat dara"
+   ]
+  },
+  {
+   "name": "Paddy (Dhan)",
+   "hi": "धान",
+   "en": "Paddy",
+   "variants": [
+    "dhan",
+    "paddy",
+    "rice"
+   ]
+  },
+  {
+   "name": "Maize",
+   "hi": "मक्का",
+   "en": "Maize",
+   "variants": [
+    "makka",
+    "corn"
+   ]
+  },
+  {
+   "name": "Mustard",
+   "hi": "सरसों",
+   "en": "Mustard",
+   "variants": [
+    "sarson",
+    "sarso"
+   ]
+  },
+  {
+   "name": "Potato",
+   "hi": "आलू",
+   "en": "Potato",
+   "variants": [
+    "aloo",
+    "alu"
+   ]
+  },
+  {
+   "name": "Onion",
+   "hi": "प्याज़",
+   "en": "Onion",
+   "variants": [
+    "pyaz",
+    "pyaaz"
+   ]
+  },
+  {
+   "name": "Tomato",
+   "hi": "टमाटर",
+   "en": "Tomato",
+   "variants": [
+    "tamatar"
+   ]
+  },
+  {
+   "name": "Soyabean",
+   "hi": "सोयाबीन",
+   "en": "Soyabean",
+   "variants": [
+    "soybean",
+    "soya"
+   ]
+  }
+ ],
+ "geography": {
+  "states": [
+   {
+    "state": "Andaman and Nicobar Islands",
+    "hi": "अंडमान और निकोबार द्वीपसमूह",
+    "districts": [
+     {
+      "name": "South Andaman",
+      "hi": "दक्षिण अंडमान"
+     },
+     {
+      "name": "North and Middle Andaman",
+      "hi": "उत्तर और मध्य अंडमान"
+     },
+     {
+      "name": "Nicobar",
+      "hi": "निकोबार"
+     }
+    ]
+   },
+   {
+    "state": "Andhra Pradesh",
+    "hi": "आंध्र प्रदेश",
+    "districts": [
+     {
+      "name": "Anantapur",
+      "hi": "अनंतपुर"
+     },
+     {
+      "name": "Chittoor",
+      "hi": "चित्तूर"
+     },
+     {
+      "name": "East Godavari",
+      "hi": "पूर्वी गोदावरी"
+     },
+     {
+      "name": "Guntur",
+      "hi": "गुंटूर"
+     },
+     {
+      "name": "Krishna",
+      "hi": "कृष्णा"
+     },
+     {
+      "name": "Kurnool",
+      "hi": "कर्नूल"
+     },
+     {
+      "name": "Visakhapatnam",
+      "hi": "विशाखापत्तनम"
+     }
+    ]
+   },
+   {
+    "state": "Arunachal Pradesh",
+    "hi": "अरुणाचल प्रदेश",
+    "districts": [
+     {
+      "name": "Changlang",
+      "hi": "चांगलांग"
+     },
+     {
+      "name": "Lower Subansiri",
+      "hi": "निचला सुबनसिरी"
+     },
+     {
+      "name": "Papum Pare",
+      "hi": "पापुम पारे"
+     },
+     {
+      "name": "Tawang",
+      "hi": "तवांग"
+     },
+     {
+      "name": "West Kameng",
+      "hi": "पश्चिम कामेंग"
+     }
+    ]
+   },
+   {
+    "state": "Assam",
+    "hi": "असम",
+    "districts": [
+     {
+      "name": "Cachar",
+      "hi": "कछार"
+     },
+     {
+      "name": "Dibrugarh",
+      "hi": "डिब्रूगढ़"
+     },
+     {
+      "name": "Jorhat",
+      "hi": "जोरहाट"
+     },
+     {
+      "name": "Kamrup",
+      "hi": "कामरूप"
+     },
+     {
+      "name": "Nagaon",
+      "hi": "नगांव"
+     },
+     {
+      "name": "Sonitpur",
+      "hi": "सोनितपुर"
+     }
+    ]
+   },
+   {
+    "state": "Bihar",
+    "hi": "बिहार",
+    "districts": [
+     {
+      "name": "Bhagalpur",
+      "hi": "भागलपुर"
+     },
+     {
+      "name": "Darbhanga",
+      "hi": "दरभंगा"
+     },
+     {
+      "name": "Gaya",
+      "hi": "गया"
+     },
+     {
+      "name": "Muzaffarpur",
+      "hi": "मुज़फ़्फ़रपुर"
+     },
+     {
+      "name": "Patna",
+      "hi": "पटना"
+     },
+     {
+      "name": "Purnia",
+      "hi": "पूर्णिया"
+     }
+    ]
+   },
+   {
+    "state": "Chandigarh",
+    "hi": "चंडीगढ़",
+    "districts": [
+     {
+      "name": "Chandigarh",
+      "hi": "चंडीगढ़"
+     }
+    ]
+   },
+   {
+    "state": "Chhattisgarh",
+    "hi": "छत्तीसगढ़",
+    "districts": [
+     {
+      "name": "Bastar",
+      "hi": "बस्तर"
+     },
+     {
+      "name": "Bilaspur",
+      "hi": "बिलासपुर"
+     },
+     {
+      "name": "Durg",
+      "hi": "दुर्ग"
+     },
+     {
+      "name": "Korba",
+      "hi": "कोरबा"
+     },
+     {
+      "name": "Raigarh",
+      "hi": "रायगढ़"
+     },
+     {
+      "name": "Raipur",
+      "hi": "रायपुर"
+     }
+    ]
+   },
+   {
+    "state": "Dadra and Nagar Haveli and Daman and Diu",
+    "hi": "दादरा और नगर हवेली और दमन और दीव",
+    "districts": [
+     {
+      "name": "Dadra and Nagar Haveli",
+      "hi": "दादरा और नगर हवेली"
+     },
+     {
+      "name": "Daman",
+      "hi": "दमन"
+     },
+     {
+      "name": "Diu",
+      "hi": "दीव"
+     }
+    ]
+   },
+   {
+    "state": "Delhi",
+    "hi": "दिल्ली",
+    "districts": [
+     {
+      "name": "East Delhi",
+      "hi": "पूर्वी दिल्ली"
+     },
+     {
+      "name": "New Delhi",
+      "hi": "नई दिल्ली"
+     },
+     {
+      "name": "North Delhi",
+      "hi": "उत्तर दिल्ली"
+     },
+     {
+      "name": "South Delhi",
+      "hi": "दक्षिण दिल्ली"
+     },
+     {
+      "name": "West Delhi",
+      "hi": "पश्चिम दिल्ली"
+     }
+    ]
+   },
+   {
+    "state": "Goa",
+    "hi": "गोवा",
+    "districts": [
+     {
+      "name": "North Goa",
+      "hi": "उत्तर गोवा"
+     },
+     {
+      "name": "South Goa",
+      "hi": "दक्षिण गोवा"
+     }
+    ]
+   },
+   {
+    "state": "Gujarat",
+    "hi": "गुजरात",
+    "districts": [
+     {
+      "name": "Ahmedabad",
+      "hi": "अहमदाबाद"
+     },
+     {
+      "name": "Bhavnagar",
+      "hi": "भावनगर"
+     },
+     {
+      "name": "Junagadh",
+      "hi": "जूनागढ़"
+     },
+     {
+      "name": "Rajkot",
+      "hi": "राजकोट"
+     },
+     {
+      "name": "Surat",
+      "hi": "सूरत"
+     },
+     {
+      "name": "Vadodara",
+      "hi": "वडोदरा"
+     }
+    ]
+   },
+   {
+    "state": "Haryana",
+    "hi": "हरियाणा",
+    "districts": [
+     {
+      "name": "Ambala",
+      "hi": "अंबाला"
+     },
+     {
+      "name": "Gurugram",
+      "hi": "गुरुग्राम"
+     },
+     {
+      "name": "Hisar",
+      "hi": "हिसार"
+     },
+     {
+      "name": "Karnal",
+      "hi": "करनाल"
+     },
+     {
+      "name": "Rohtak",
+      "hi": "रोहतक"
+     },
+     {
+      "name": "Sirsa",
+      "hi": "सिरसा"
+     }
+    ]
+   },
+   {
+    "state": "Himachal Pradesh",
+    "hi": "हिमाचल प्रदेश",
+    "districts": [
+     {
+      "name": "Kangra",
+      "hi": "कांगड़ा"
+     },
+     {
+      "name": "Kullu",
+      "hi": "कुल्लू"
+     },
+     {
+      "name": "Mandi",
+      "hi": "मंडी"
+     },
+     {
+      "name": "Shimla",
+      "hi": "शिमला"
+     },
+     {
+      "name": "Solan",
+      "hi": "सोलन"
+     }
+    ]
+   },
+   {
+    "state": "Jammu and Kashmir",
+    "hi": "जम्मू और कश्मीर",
+    "districts": [
+     {
+      "name": "Anantnag",
+      "hi": "अनंतनाग"
+     },
+     {
+      "name": "Baramulla",
+      "hi": "बारामूला"
+     },
+     {
+      "name": "Jammu",
+      "hi": "जम्मू"
+     },
+     {
+      "name": "Kathua",
+      "hi": "कठुआ"
+     },
+     {
+      "name": "Srinagar",
+      "hi": "श्रीनगर"
+     }
+    ]
+   },
+   {
+    "state": "Jharkhand",
+    "hi": "झारखंड",
+    "districts": [
+     {
+      "name": "Bokaro",
+      "hi": "बोकारो"
+     },
+     {
+      "name": "Dhanbad",
+      "hi": "धनबाद"
+     },
+     {
+      "name": "East Singhbhum",
+      "hi": "पूर्वी सिंहभूम"
+     },
+     {
+      "name": "Hazaribagh",
+      "hi": "हजारीबाग"
+     },
+     {
+      "name": "Ranchi",
+      "hi": "रांची"
+     }
+    ]
+   },
+   {
+    "state": "Karnataka",
+    "hi": "कर्नाटक",
+    "districts": [
+     {
+      "name": "Belagavi",
+      "hi": "बेलगावी"
+     },
+     {
+      "name": "Bengaluru Urban",
+      "hi": "बेंगलुरु शहरी"
+     },
+     {
+      "name": "Davanagere",
+      "hi": "दावणगेरे"
+     },
+     {
+      "name": "Dharwad",
+      "hi": "धारवाड़"
+     },
+     {
+      "name": "Kalaburagi",
+      "hi": "कलबुर्गी"
+     },
+     {
+      "name": "Mysuru",
+      "hi": "मैसूरु"
+     }
+    ]
+   },
+   {
+    "state": "Kerala",
+    "hi": "केरल",
+    "districts": [
+     {
+      "name": "Ernakulam",
+      "hi": "एर्नाकुलम"
+     },
+     {
+      "name": "Kozhikode",
+      "hi": "कोझिकोड"
+     },
+     {
+      "name": "Palakkad",
+      "hi": "पलक्कड़"
+     },
+     {
+      "name": "Thiruvananthapuram",
+      "hi": "तिरुवनंतपुरम"
+     },
+     {
+      "name": "Thrissur",
+      "hi": "त्रिशूर"
+     }
+    ]
+   },
+   {
+    "state": "Ladakh",
+    "hi": "लद्दाख",
+    "districts": [
+     {
+      "name": "Kargil",
+      "hi": "कारगिल"
+     },
+     {
+      "name": "Leh",
+      "hi": "लेह"
+     }
+    ]
+   },
+   {
+    "state": "Lakshadweep",
+    "hi": "लक्षद्वीप",
+    "districts": [
+     {
+      "name": "Lakshadweep",
+      "hi": "लक्षद्वीप"
+     }
+    ]
+   },
+   {
+    "state": "Madhya Pradesh",
+    "hi": "मध्य प्रदेश",
+    "districts": [
+     {
+      "name": "Bhopal",
+      "hi": "भोपाल"
+     },
+     {
+      "name": "Dewas",
+      "hi": "देवास"
+     },
+     {
+      "name": "Gwalior",
+      "hi": "ग्वालियर"
+     },
+     {
+      "name": "Indore",
+      "hi": "इंदौर"
+     },
+     {
+      "name": "Jabalpur",
+      "hi": "जबलपुर"
+     },
+     {
+      "name": "Sagar",
+      "hi": "सागर"
+     },
+     {
+      "name": "Ujjain",
+      "hi": "उज्जैन"
+     }
+    ]
+   },
+   {
+    "state": "Maharashtra",
+    "hi": "महाराष्ट्र",
+    "districts": [
+     {
+      "name": "Kolhapur",
+      "hi": "कोल्हापुर"
+     },
+     {
+      "name": "Mumbai",
+      "hi": "मुंबई"
+     },
+     {
+      "name": "Nagpur",
+      "hi": "नागपुर"
+     },
+     {
+      "name": "Nashik",
+      "hi": "नाशिक"
+     },
+     {
+      "name": "Pune",
+      "hi": "पुणे"
+     },
+     {
+      "name": "Solapur",
+      "hi": "सोलापुर"
+     }
+    ]
+   },
+   {
+    "state": "Manipur",
+    "hi": "मणिपुर",
+    "districts": [
+     {
+      "name": "Churachandpur",
+      "hi": "चूड़ाचांदपुर"
+     },
+     {
+      "name": "Imphal East",
+      "hi": "इम्फाल पूर्व"
+     },
+     {
+      "name": "Imphal West",
+      "hi": "इम्फाल पश्चिम"
+     },
+     {
+      "name": "Thoubal",
+      "hi": "थौबल"
+     }
+    ]
+   },
+   {
+    "state": "Meghalaya",
+    "hi": "मेघालय",
+    "districts": [
+     {
+      "name": "East Khasi Hills",
+      "hi": "पूर्वी खासी हिल्स"
+     },
+     {
+      "name": "Ri Bhoi",
+      "hi": "री भोई"
+     },
+     {
+      "name": "West Garo Hills",
+      "hi": "पश्चिम गारो हिल्स"
+     }
+    ]
+   },
+   {
+    "state": "Mizoram",
+    "hi": "मिज़ोरम",
+    "districts": [
+     {
+      "name": "Aizawl",
+      "hi": "आइज़ोल"
+     },
+     {
+      "name": "Champhai",
+      "hi": "चम्फाई"
+     },
+     {
+      "name": "Lunglei",
+      "hi": "लुंगलेई"
+     }
+    ]
+   },
+   {
+    "state": "Nagaland",
+    "hi": "नागालैंड",
+    "districts": [
+     {
+      "name": "Dimapur",
+      "hi": "दीमापुर"
+     },
+     {
+      "name": "Kohima",
+      "hi": "कोहिमा"
+     },
+     {
+      "name": "Mokokchung",
+      "hi": "मोकोकचुंग"
+     }
+    ]
+   },
+   {
+    "state": "Odisha",
+    "hi": "ओडिशा",
+    "districts": [
+     {
+      "name": "Balasore",
+      "hi": "बालासोर"
+     },
+     {
+      "name": "Cuttack",
+      "hi": "कटक"
+     },
+     {
+      "name": "Ganjam",
+      "hi": "गंजाम"
+     },
+     {
+      "name": "Khordha",
+      "hi": "खोरधा"
+     },
+     {
+      "name": "Koraput",
+      "hi": "कोरापुट"
+     },
+     {
+      "name": "Sambalpur",
+      "hi": "संबलपुर"
+     }
+    ]
+   },
+   {
+    "state": "Puducherry",
+    "hi": "पुदुच्चेरी",
+    "districts": [
+     {
+      "name": "Karaikal",
+      "hi": "कराईकल"
+     },
+     {
+      "name": "Puducherry",
+      "hi": "पुदुच्चेरी"
+     }
+    ]
+   },
+   {
+    "state": "Punjab",
+    "hi": "पंजाब",
+    "districts": [
+     {
+      "name": "Amritsar",
+      "hi": "अमृतसर"
+     },
+     {
+      "name": "Bathinda",
+      "hi": "बठिंडा"
+     },
+     {
+      "name": "Jalandhar",
+      "hi": "जालंधर"
+     },
+     {
+      "name": "Ludhiana",
+      "hi": "लुधियाना"
+     },
+     {
+      "name": "Patiala",
+      "hi": "पटियाला"
+     },
+     {
+      "name": "Sangrur",
+      "hi": "संगरूर"
+     }
+    ]
+   },
+   {
+    "state": "Rajasthan",
+    "hi": "राजस्थान",
+    "districts": [
+     {
+      "name": "Ajmer",
+      "hi": "अजमेर"
+     },
+     {
+      "name": "Alwar",
+      "hi": "अलवर"
+     },
+     {
+      "name": "Bikaner",
+      "hi": "बीकानेर"
+     },
+     {
+      "name": "Jaipur",
+      "hi": "जयपुर"
+     },
+     {
+      "name": "Jodhpur",
+      "hi": "जोधपुर"
+     },
+     {
+      "name": "Kota",
+      "hi": "कोटा"
+     },
+     {
+      "name": "Udaipur",
+      "hi": "उदयपुर"
+     }
+    ]
+   },
+   {
+    "state": "Sikkim",
+    "hi": "सिक्किम",
+    "districts": [
+     {
+      "name": "East Sikkim",
+      "hi": "पूर्व सिक्किम"
+     },
+     {
+      "name": "North Sikkim",
+      "hi": "उत्तर सिक्किम"
+     },
+     {
+      "name": "South Sikkim",
+      "hi": "दक्षिण सिक्किम"
+     },
+     {
+      "name": "West Sikkim",
+      "hi": "पश्चिम सिक्किम"
+     }
+    ]
+   },
+   {
+    "state": "Tamil Nadu",
+    "hi": "तमिलनाडु",
+    "districts": [
+     {
+      "name": "Chennai",
+      "hi": "चेन्नई"
+     },
+     {
+      "name": "Coimbatore",
+      "hi": "कोयंबटूर"
+     },
+     {
+      "name": "Madurai",
+      "hi": "मदुरै"
+     },
+     {
+      "name": "Salem",
+      "hi": "सेलम"
+     },
+     {
+      "name": "Thanjavur",
+      "hi": "तंजावुर"
+     },
+     {
+      "name": "Tiruchirappalli",
+      "hi": "तिरुचिरापल्ली"
+     }
+    ]
+   },
+   {
+    "state": "Telangana",
+    "hi": "तेलंगाना",
+    "districts": [
+     {
+      "name": "Hyderabad",
+      "hi": "हैदराबाद"
+     },
+     {
+      "name": "Karimnagar",
+      "hi": "करीमनगर"
+     },
+     {
+      "name": "Khammam",
+      "hi": "खम्मम"
+     },
+     {
+      "name": "Nizamabad",
+      "hi": "निज़ामाबाद"
+     },
+     {
+      "name": "Warangal",
+      "hi": "वारंगल"
+     }
+    ]
+   },
+   {
+    "state": "Tripura",
+    "hi": "त्रिपुरा",
+    "districts": [
+     {
+      "name": "Dhalai",
+      "hi": "धलाई"
+     },
+     {
+      "name": "North Tripura",
+      "hi": "उत्तर त्रिपुरा"
+     },
+     {
+      "name": "South Tripura",
+      "hi": "दक्षिण त्रिपुरा"
+     },
+     {
+      "name": "West Tripura",
+      "hi": "पश्चिम त्रिपुरा"
+     }
+    ]
+   },
+   {
+    "state": "Uttar Pradesh",
+    "hi": "उत्तर प्रदेश",
+    "districts": [
+     {
+      "name": "Agra",
+      "hi": "आगरा"
+     },
+     {
+      "name": "Barabanki",
+      "hi": "बाराबंकी"
+     },
+     {
+      "name": "Bareilly",
+      "hi": "बरेली"
+     },
+     {
+      "name": "Ghaziabad",
+      "hi": "ग़ाज़ियाबाद"
+     },
+     {
+      "name": "Gorakhpur",
+      "hi": "गोरखपुर"
+     },
+     {
+      "name": "Hardoi",
+      "hi": "हरदोई"
+     },
+     {
+      "name": "Kanpur Nagar",
+      "hi": "कानपुर नगर"
+     },
+     {
+      "name": "Lucknow",
+      "hi": "लखनऊ"
+     },
+     {
+      "name": "Meerut",
+      "hi": "मेरठ"
+     },
+     {
+      "name": "Prayagraj",
+      "hi": "प्रयागराज"
+     },
+     {
+      "name": "Raebareli",
+      "hi": "रायबरेली"
+     },
+     {
+      "name": "Sitapur",
+      "hi": "सीतापुर"
+     },
+     {
+      "name": "Unnao",
+      "hi": "उन्नाव"
+     },
+     {
+      "name": "Varanasi",
+      "hi": "वाराणसी"
+     }
+    ]
+   },
+   {
+    "state": "Uttarakhand",
+    "hi": "उत्तराखंड",
+    "districts": [
+     {
+      "name": "Almora",
+      "hi": "अल्मोड़ा"
+     },
+     {
+      "name": "Dehradun",
+      "hi": "देहरादून"
+     },
+     {
+      "name": "Haridwar",
+      "hi": "हरिद्वार"
+     },
+     {
+      "name": "Nainital",
+      "hi": "नैनीताल"
+     },
+     {
+      "name": "Udham Singh Nagar",
+      "hi": "ऊधम सिंह नगर"
+     }
+    ]
+   },
+   {
+    "state": "West Bengal",
+    "hi": "पश्चिम बंगाल",
+    "districts": [
+     {
+      "name": "Darjeeling",
+      "hi": "दार्जिलिंग"
+     },
+     {
+      "name": "Hooghly",
+      "hi": "हुगली"
+     },
+     {
+      "name": "Howrah",
+      "hi": "हावड़ा"
+     },
+     {
+      "name": "Kolkata",
+      "hi": "कोलकाता"
+     },
+     {
+      "name": "Murshidabad",
+      "hi": "मुर्शिदाबाद"
+     },
+     {
+      "name": "Nadia",
+      "hi": "नदिया"
+     },
+     {
+      "name": "Purba Bardhaman",
+      "hi": "पूर्व बर्धमान"
+     }
+    ]
+   }
+  ],
+  "market_hi": {
+   "Lucknow": "लखनऊ",
+   "Mohanlalganj": "मोहनलालगंज",
+   "Unnao": "उन्नाव",
+   "Barabanki": "बाराबंकी",
+   "Sitapur": "सीतापुर",
+   "Raebareli": "रायबरेली",
+   "Kanpur": "कानपुर",
+   "Indore": "इंदौर",
+   "Bhopal": "भोपाल",
+   "Dewas": "देवास",
+   "Ujjain": "उज्जैन"
+  }
+ },
+ "nearby_districts": {
+  "_note": "DEMO adjacency. Real neighbour lists need a source; if a district is missing here the app falls back to every district in the same state.",
+  "Uttar Pradesh|Lucknow": [
+   "Unnao",
+   "Barabanki",
+   "Sitapur",
+   "Raebareli"
+  ],
+  "Uttar Pradesh|Unnao": [
+   "Lucknow",
+   "Kanpur Nagar",
+   "Raebareli"
+  ],
+  "Uttar Pradesh|Barabanki": [
+   "Lucknow",
+   "Sitapur",
+   "Raebareli"
+  ],
+  "Uttar Pradesh|Sitapur": [
+   "Lucknow",
+   "Barabanki"
+  ],
+  "Uttar Pradesh|Raebareli": [
+   "Lucknow",
+   "Unnao",
+   "Barabanki"
+  ],
+  "Uttar Pradesh|Kanpur Nagar": [
+   "Unnao",
+   "Lucknow"
+  ],
+  "Madhya Pradesh|Indore": [
+   "Dewas",
+   "Ujjain"
+  ],
+  "Madhya Pradesh|Bhopal": [
+   "Dewas"
+  ],
+  "Madhya Pradesh|Dewas": [
+   "Indore",
+   "Ujjain",
+   "Bhopal"
+  ],
+  "Madhya Pradesh|Ujjain": [
+   "Indore",
+   "Dewas"
+  ]
+ },
+ "prices": [
+  {
+   "commodity": "Wheat",
+   "state": "Uttar Pradesh",
+   "district": "Lucknow",
+   "market": "Lucknow",
+   "date": "2026-10-14",
+   "modal_price": 2410,
+   "arrivals": 202
+  },
+  {
+   "commodity": "Wheat",
+   "state": "Uttar Pradesh",
+   "district": "Lucknow",
+   "market": "Lucknow",
+   "date": "2026-10-15",
+   "modal_price": 2410,
+   "arrivals": 143
+  },
+  {
+   "commodity": "Wheat",
+   "state": "Uttar Pradesh",
+   "district": "Lucknow",
+   "market": "Lucknow",
+   "date": "2026-10-16",
+   "modal_price": 2420,
+   "arrivals": 284
+  },
+  {
+   "commodity": "Wheat",
+   "state": "Uttar Pradesh",
+   "district": "Lucknow",
+   "market": "Lucknow",
+   "date": "2026-10-17",
+   "modal_price": 2420,
+   "arrivals": 267
+  },
+  {
+   "commodity": "Wheat",
+   "state": "Uttar Pradesh",
+   "district": "Lucknow",
+   "market": "Lucknow",
+   "date": "2026-10-18",
+   "modal_price": 2430,
+   "arrivals": 81
+  },
+  {
+   "commodity": "Wheat",
+   "state": "Uttar Pradesh",
+   "district": "Lucknow",
+   "market": "Lucknow",
+   "date": "2026-10-19",
+   "modal_price": 2430,
+   "arrivals": 109
+  },
+  {
+   "commodity": "Wheat",
+   "state": "Uttar Pradesh",
+   "district": "Lucknow",
+   "market": "Lucknow",
+   "date": "2026-10-20",
+   "modal_price": 2460,
+   "arrivals": 293
+  },
+  {
+   "commodity": "Paddy (Dhan)",
+   "state": "Uttar Pradesh",
+   "district": "Lucknow",
+   "market": "Lucknow",
+   "date": "2026-10-14",
+   "modal_price": null,
+   "arrivals": null
+  },
+  {
+   "commodity": "Paddy (Dhan)",
+   "state": "Uttar Pradesh",
+   "district": "Lucknow",
+   "market": "Lucknow",
+   "date": "2026-10-15",
+   "modal_price": 2310,
+   "arrivals": 331
+  },
+  {
+   "commodity": "Paddy (Dhan)",
+   "state": "Uttar Pradesh",
+   "district": "Lucknow",
+   "market": "Lucknow",
+   "date": "2026-10-16",
+   "modal_price": 2300,
+   "arrivals": 401
+  },
+  {
+   "commodity": "Paddy (Dhan)",
+   "state": "Uttar Pradesh",
+   "district": "Lucknow",
+   "market": "Lucknow",
+   "date": "2026-10-17",
+   "modal_price": 2280,
+   "arrivals": 397
+  },
+  {
+   "commodity": "Paddy (Dhan)",
+   "state": "Uttar Pradesh",
+   "district": "Lucknow",
+   "market": "Lucknow",
+   "date": "2026-10-18",
+   "modal_price": 2270,
+   "arrivals": 326
+  },
+  {
+   "commodity": "Paddy (Dhan)",
+   "state": "Uttar Pradesh",
+   "district": "Lucknow",
+   "market": "Lucknow",
+   "date": "2026-10-19",
+   "modal_price": null,
+   "arrivals": null
+  },
+  {
+   "commodity": "Paddy (Dhan)",
+   "state": "Uttar Pradesh",
+   "district": "Lucknow",
+   "market": "Lucknow",
+   "date": "2026-10-20",
+   "modal_price": 2260,
+   "arrivals": 131
+  },
+  {
+   "commodity": "Maize",
+   "state": "Uttar Pradesh",
+   "district": "Lucknow",
+   "market": "Lucknow",
+   "date": "2026-10-14",
+   "modal_price": 2110,
+   "arrivals": 272
+  },
+  {
+   "commodity": "Maize",
+   "state": "Uttar Pradesh",
+   "district": "Lucknow",
+   "market": "Lucknow",
+   "date": "2026-10-15",
+   "modal_price": 2120,
+   "arrivals": 166
+  },
+  {
+   "commodity": "Maize",
+   "state": "Uttar Pradesh",
+   "district": "Lucknow",
+   "market": "Lucknow",
+   "date": "2026-10-16",
+   "modal_price": 2100,
+   "arrivals": 32
+  },
+  {
+   "commodity": "Maize",
+   "state": "Uttar Pradesh",
+   "district": "Lucknow",
+   "market": "Lucknow",
+   "date": "2026-10-17",
+   "modal_price": null,
+   "arrivals": null
+  },
+  {
+   "commodity": "Maize",
+   "state": "Uttar Pradesh",
+   "district": "Lucknow",
+   "market": "Lucknow",
+   "date": "2026-10-18",
+   "modal_price": 2070,
+   "arrivals": 417
+  },
+  {
+   "commodity": "Maize",
+   "state": "Uttar Pradesh",
+   "district": "Lucknow",
+   "market": "Lucknow",
+   "date": "2026-10-19",
+   "modal_price": 2080,
+   "arrivals": 93
+  },
+  {
+   "commodity": "Maize",
+   "state": "Uttar Pradesh",
+   "district": "Lucknow",
+   "market": "Lucknow",
+   "date": "2026-10-20",
+   "modal_price": 2110,
+   "arrivals": 407
+  },
+  {
+   "commodity": "Mustard",
+   "state": "Uttar Pradesh",
+   "district": "Lucknow",
+   "market": "Lucknow",
+   "date": "2026-10-14",
+   "modal_price": 6320,
+   "arrivals": 407
+  },
+  {
+   "commodity": "Mustard",
+   "state": "Uttar Pradesh",
+   "district": "Lucknow",
+   "market": "Lucknow",
+   "date": "2026-10-15",
+   "modal_price": 6260,
+   "arrivals": 169
+  },
+  {
+   "commodity": "Mustard",
+   "state": "Uttar Pradesh",
+   "district": "Lucknow",
+   "market": "Lucknow",
+   "date": "2026-10-16",
+   "modal_price": 6280,
+   "arrivals": 25
+  },
+  {
+   "commodity": "Mustard",
+   "state": "Uttar Pradesh",
+   "district": "Lucknow",
+   "market": "Lucknow",
+   "date": "2026-10-17",
+   "modal_price": 6330,
+   "arrivals": 91
+  },
+  {
+   "commodity": "Mustard",
+   "state": "Uttar Pradesh",
+   "district": "Lucknow",
+   "market": "Lucknow",
+   "date": "2026-10-18",
+   "modal_price": 6320,
+   "arrivals": 52
+  },
+  {
+   "commodity": "Mustard",
+   "state": "Uttar Pradesh",
+   "district": "Lucknow",
+   "market": "Lucknow",
+   "date": "2026-10-19",
+   "modal_price": 6380,
+   "arrivals": 401
+  },
+  {
+   "commodity": "Mustard",
+   "state": "Uttar Pradesh",
+   "district": "Lucknow",
+   "market": "Lucknow",
+   "date": "2026-10-20",
+   "modal_price": 6390,
+   "arrivals": 391
+  },
+  {
+   "commodity": "Potato",
+   "state": "Uttar Pradesh",
+   "district": "Lucknow",
+   "market": "Lucknow",
+   "date": "2026-10-14",
+   "modal_price": 1590,
+   "arrivals": 366
+  },
+  {
+   "commodity": "Potato",
+   "state": "Uttar Pradesh",
+   "district": "Lucknow",
+   "market": "Lucknow",
+   "date": "2026-10-15",
+   "modal_price": 1600,
+   "arrivals": 405
+  },
+  {
+   "commodity": "Potato",
+   "state": "Uttar Pradesh",
+   "district": "Lucknow",
+   "market": "Lucknow",
+   "date": "2026-10-16",
+   "modal_price": 1620,
+   "arrivals": 337
+  },
+  {
+   "commodity": "Potato",
+   "state": "Uttar Pradesh",
+   "district": "Lucknow",
+   "market": "Lucknow",
+   "date": "2026-10-17",
+   "modal_price": 1590,
+   "arrivals": 30
+  },
+  {
+   "commodity": "Potato",
+   "state": "Uttar Pradesh",
+   "district": "Lucknow",
+   "market": "Lucknow",
+   "date": "2026-10-18",
+   "modal_price": 1600,
+   "arrivals": 401
+  },
+  {
+   "commodity": "Potato",
+   "state": "Uttar Pradesh",
+   "district": "Lucknow",
+   "market": "Lucknow",
+   "date": "2026-10-19",
+   "modal_price": 1590,
+   "arrivals": 394
+  },
+  {
+   "commodity": "Potato",
+   "state": "Uttar Pradesh",
+   "district": "Lucknow",
+   "market": "Lucknow",
+   "date": "2026-10-20",
+   "modal_price": null,
+   "arrivals": null
+  },
+  {
+   "commodity": "Onion",
+   "state": "Uttar Pradesh",
+   "district": "Lucknow",
+   "market": "Lucknow",
+   "date": "2026-10-14",
+   "modal_price": null,
+   "arrivals": null
+  },
+  {
+   "commodity": "Onion",
+   "state": "Uttar Pradesh",
+   "district": "Lucknow",
+   "market": "Lucknow",
+   "date": "2026-10-15",
+   "modal_price": 2280,
+   "arrivals": 362
+  },
+  {
+   "commodity": "Onion",
+   "state": "Uttar Pradesh",
+   "district": "Lucknow",
+   "market": "Lucknow",
+   "date": "2026-10-16",
+   "modal_price": 2300,
+   "arrivals": 98
+  },
+  {
+   "commodity": "Onion",
+   "state": "Uttar Pradesh",
+   "district": "Lucknow",
+   "market": "Lucknow",
+   "date": "2026-10-17",
+   "modal_price": 2280,
+   "arrivals": 261
+  },
+  {
+   "commodity": "Onion",
+   "state": "Uttar Pradesh",
+   "district": "Lucknow",
+   "market": "Lucknow",
+   "date": "2026-10-18",
+   "modal_price": 2280,
+   "arrivals": 395
+  },
+  {
+   "commodity": "Onion",
+   "state": "Uttar Pradesh",
+   "district": "Lucknow",
+   "market": "Lucknow",
+   "date": "2026-10-19",
+   "modal_price": 2310,
+   "arrivals": 40
+  },
+  {
+   "commodity": "Onion",
+   "state": "Uttar Pradesh",
+   "district": "Lucknow",
+   "market": "Lucknow",
+   "date": "2026-10-20",
+   "modal_price": 2290,
+   "arrivals": 241
+  },
+  {
+   "commodity": "Tomato",
+   "state": "Uttar Pradesh",
+   "district": "Lucknow",
+   "market": "Lucknow",
+   "date": "2026-10-14",
+   "modal_price": 2730,
+   "arrivals": 320
+  },
+  {
+   "commodity": "Tomato",
+   "state": "Uttar Pradesh",
+   "district": "Lucknow",
+   "market": "Lucknow",
+   "date": "2026-10-15",
+   "modal_price": 2700,
+   "arrivals": 166
+  },
+  {
+   "commodity": "Tomato",
+   "state": "Uttar Pradesh",
+   "district": "Lucknow",
+   "market": "Lucknow",
+   "date": "2026-10-16",
+   "modal_price": 2690,
+   "arrivals": 120
+  },
+  {
+   "commodity": "Tomato",
+   "state": "Uttar Pradesh",
+   "district": "Lucknow",
+   "market": "Lucknow",
+   "date": "2026-10-17",
+   "modal_price": 2720,
+   "arrivals": 210
+  },
+  {
+   "commodity": "Tomato",
+   "state": "Uttar Pradesh",
+   "district": "Lucknow",
+   "market": "Lucknow",
+   "date": "2026-10-18",
+   "modal_price": 2690,
+   "arrivals": 111
+  },
+  {
+   "commodity": "Tomato",
+   "state": "Uttar Pradesh",
+   "district": "Lucknow",
+   "market": "Lucknow",
+   "date": "2026-10-19",
+   "modal_price": 2670,
+   "arrivals": 42
+  },
+  {
+   "commodity": "Tomato",
+   "state": "Uttar Pradesh",
+   "district": "Lucknow",
+   "market": "Lucknow",
+   "date": "2026-10-20",
+   "modal_price": 2700,
+   "arrivals": 61
+  },
+  {
+   "commodity": "Wheat",
+   "state": "Uttar Pradesh",
+   "district": "Lucknow",
+   "market": "Mohanlalganj",
+   "date": "2026-10-14",
+   "modal_price": 2400,
+   "arrivals": 403
+  },
+  {
+   "commodity": "Wheat",
+   "state": "Uttar Pradesh",
+   "district": "Lucknow",
+   "market": "Mohanlalganj",
+   "date": "2026-10-15",
+   "modal_price": 2400,
+   "arrivals": 75
+  },
+  {
+   "commodity": "Wheat",
+   "state": "Uttar Pradesh",
+   "district": "Lucknow",
+   "market": "Mohanlalganj",
+   "date": "2026-10-16",
+   "modal_price": 2410,
+   "arrivals": 346
+  },
+  {
+   "commodity": "Wheat",
+   "state": "Uttar Pradesh",
+   "district": "Lucknow",
+   "market": "Mohanlalganj",
+   "date": "2026-10-17",
+   "modal_price": 2410,
+   "arrivals": 414
+  },
+  {
+   "commodity": "Wheat",
+   "state": "Uttar Pradesh",
+   "district": "Lucknow",
+   "market": "Mohanlalganj",
+   "date": "2026-10-18",
+   "modal_price": 2420,
+   "arrivals": 64
+  },
+  {
+   "commodity": "Wheat",
+   "state": "Uttar Pradesh",
+   "district": "Lucknow",
+   "market": "Mohanlalganj",
+   "date": "2026-10-19",
+   "modal_price": null,
+   "arrivals": null
+  },
+  {
+   "commodity": "Wheat",
+   "state": "Uttar Pradesh",
+   "district": "Lucknow",
+   "market": "Mohanlalganj",
+   "date": "2026-10-20",
+   "modal_price": null,
+   "arrivals": null
+  },
+  {
+   "commodity": "Potato",
+   "state": "Uttar Pradesh",
+   "district": "Lucknow",
+   "market": "Mohanlalganj",
+   "date": "2026-10-14",
+   "modal_price": 1590,
+   "arrivals": 223
+  },
+  {
+   "commodity": "Potato",
+   "state": "Uttar Pradesh",
+   "district": "Lucknow",
+   "market": "Mohanlalganj",
+   "date": "2026-10-15",
+   "modal_price": 1610,
+   "arrivals": 182
+  },
+  {
+   "commodity": "Potato",
+   "state": "Uttar Pradesh",
+   "district": "Lucknow",
+   "market": "Mohanlalganj",
+   "date": "2026-10-16",
+   "modal_price": null,
+   "arrivals": null
+  },
+  {
+   "commodity": "Potato",
+   "state": "Uttar Pradesh",
+   "district": "Lucknow",
+   "market": "Mohanlalganj",
+   "date": "2026-10-17",
+   "modal_price": 1600,
+   "arrivals": 282
+  },
+  {
+   "commodity": "Potato",
+   "state": "Uttar Pradesh",
+   "district": "Lucknow",
+   "market": "Mohanlalganj",
+   "date": "2026-10-18",
+   "modal_price": 1630,
+   "arrivals": 319
+  },
+  {
+   "commodity": "Potato",
+   "state": "Uttar Pradesh",
+   "district": "Lucknow",
+   "market": "Mohanlalganj",
+   "date": "2026-10-19",
+   "modal_price": 1630,
+   "arrivals": 74
+  },
+  {
+   "commodity": "Potato",
+   "state": "Uttar Pradesh",
+   "district": "Lucknow",
+   "market": "Mohanlalganj",
+   "date": "2026-10-20",
+   "modal_price": 1640,
+   "arrivals": 155
+  },
+  {
+   "commodity": "Onion",
+   "state": "Uttar Pradesh",
+   "district": "Lucknow",
+   "market": "Mohanlalganj",
+   "date": "2026-10-14",
+   "modal_price": 2280,
+   "arrivals": 107
+  },
+  {
+   "commodity": "Onion",
+   "state": "Uttar Pradesh",
+   "district": "Lucknow",
+   "market": "Mohanlalganj",
+   "date": "2026-10-15",
+   "modal_price": 2260,
+   "arrivals": 369
+  },
+  {
+   "commodity": "Onion",
+   "state": "Uttar Pradesh",
+   "district": "Lucknow",
+   "market": "Mohanlalganj",
+   "date": "2026-10-16",
+   "modal_price": 2230,
+   "arrivals": 394
+  },
+  {
+   "commodity": "Onion",
+   "state": "Uttar Pradesh",
+   "district": "Lucknow",
+   "market": "Mohanlalganj",
+   "date": "2026-10-17",
+   "modal_price": 2230,
+   "arrivals": 375
+  },
+  {
+   "commodity": "Onion",
+   "state": "Uttar Pradesh",
+   "district": "Lucknow",
+   "market": "Mohanlalganj",
+   "date": "2026-10-18",
+   "modal_price": 2210,
+   "arrivals": 304
+  },
+  {
+   "commodity": "Onion",
+   "state": "Uttar Pradesh",
+   "district": "Lucknow",
+   "market": "Mohanlalganj",
+   "date": "2026-10-19",
+   "modal_price": 2220,
+   "arrivals": 88
+  },
+  {
+   "commodity": "Onion",
+   "state": "Uttar Pradesh",
+   "district": "Lucknow",
+   "market": "Mohanlalganj",
+   "date": "2026-10-20",
+   "modal_price": 2210,
+   "arrivals": 136
+  },
+  {
+   "commodity": "Tomato",
+   "state": "Uttar Pradesh",
+   "district": "Lucknow",
+   "market": "Mohanlalganj",
+   "date": "2026-10-14",
+   "modal_price": 2820,
+   "arrivals": 64
+  },
+  {
+   "commodity": "Tomato",
+   "state": "Uttar Pradesh",
+   "district": "Lucknow",
+   "market": "Mohanlalganj",
+   "date": "2026-10-15",
+   "modal_price": 2800,
+   "arrivals": 72
+  },
+  {
+   "commodity": "Tomato",
+   "state": "Uttar Pradesh",
+   "district": "Lucknow",
+   "market": "Mohanlalganj",
+   "date": "2026-10-16",
+   "modal_price": 2800,
+   "arrivals": 25
+  },
+  {
+   "commodity": "Tomato",
+   "state": "Uttar Pradesh",
+   "district": "Lucknow",
+   "market": "Mohanlalganj",
+   "date": "2026-10-17",
+   "modal_price": 2800,
+   "arrivals": 143
+  },
+  {
+   "commodity": "Tomato",
+   "state": "Uttar Pradesh",
+   "district": "Lucknow",
+   "market": "Mohanlalganj",
+   "date": "2026-10-18",
+   "modal_price": 2820,
+   "arrivals": 25
+  },
+  {
+   "commodity": "Tomato",
+   "state": "Uttar Pradesh",
+   "district": "Lucknow",
+   "market": "Mohanlalganj",
+   "date": "2026-10-19",
+   "modal_price": 2860,
+   "arrivals": 291
+  },
+  {
+   "commodity": "Tomato",
+   "state": "Uttar Pradesh",
+   "district": "Lucknow",
+   "market": "Mohanlalganj",
+   "date": "2026-10-20",
+   "modal_price": 2830,
+   "arrivals": 189
+  },
+  {
+   "commodity": "Wheat",
+   "state": "Uttar Pradesh",
+   "district": "Unnao",
+   "market": "Unnao",
+   "date": "2026-10-14",
+   "modal_price": null,
+   "arrivals": null
+  },
+  {
+   "commodity": "Wheat",
+   "state": "Uttar Pradesh",
+   "district": "Unnao",
+   "market": "Unnao",
+   "date": "2026-10-15",
+   "modal_price": null,
+   "arrivals": null
+  },
+  {
+   "commodity": "Wheat",
+   "state": "Uttar Pradesh",
+   "district": "Unnao",
+   "market": "Unnao",
+   "date": "2026-10-16",
+   "modal_price": null,
+   "arrivals": null
+  },
+  {
+   "commodity": "Wheat",
+   "state": "Uttar Pradesh",
+   "district": "Unnao",
+   "market": "Unnao",
+   "date": "2026-10-17",
+   "modal_price": null,
+   "arrivals": null
+  },
+  {
+   "commodity": "Wheat",
+   "state": "Uttar Pradesh",
+   "district": "Unnao",
+   "market": "Unnao",
+   "date": "2026-10-18",
+   "modal_price": null,
+   "arrivals": null
+  },
+  {
+   "commodity": "Wheat",
+   "state": "Uttar Pradesh",
+   "district": "Unnao",
+   "market": "Unnao",
+   "date": "2026-10-19",
+   "modal_price": null,
+   "arrivals": null
+  },
+  {
+   "commodity": "Wheat",
+   "state": "Uttar Pradesh",
+   "district": "Unnao",
+   "market": "Unnao",
+   "date": "2026-10-20",
+   "modal_price": 2440,
+   "arrivals": 44
+  },
+  {
+   "commodity": "Paddy (Dhan)",
+   "state": "Uttar Pradesh",
+   "district": "Unnao",
+   "market": "Unnao",
+   "date": "2026-10-14",
+   "modal_price": 2290,
+   "arrivals": 344
+  },
+  {
+   "commodity": "Paddy (Dhan)",
+   "state": "Uttar Pradesh",
+   "district": "Unnao",
+   "market": "Unnao",
+   "date": "2026-10-15",
+   "modal_price": 2260,
+   "arrivals": 275
+  },
+  {
+   "commodity": "Paddy (Dhan)",
+   "state": "Uttar Pradesh",
+   "district": "Unnao",
+   "market": "Unnao",
+   "date": "2026-10-16",
+   "modal_price": 2250,
+   "arrivals": 146
+  },
+  {
+   "commodity": "Paddy (Dhan)",
+   "state": "Uttar Pradesh",
+   "district": "Unnao",
+   "market": "Unnao",
+   "date": "2026-10-17",
+   "modal_price": 2250,
+   "arrivals": 316
+  },
+  {
+   "commodity": "Paddy (Dhan)",
+   "state": "Uttar Pradesh",
+   "district": "Unnao",
+   "market": "Unnao",
+   "date": "2026-10-18",
+   "modal_price": 2270,
+   "arrivals": 314
+  },
+  {
+   "commodity": "Paddy (Dhan)",
+   "state": "Uttar Pradesh",
+   "district": "Unnao",
+   "market": "Unnao",
+   "date": "2026-10-19",
+   "modal_price": 2270,
+   "arrivals": 71
+  },
+  {
+   "commodity": "Paddy (Dhan)",
+   "state": "Uttar Pradesh",
+   "district": "Unnao",
+   "market": "Unnao",
+   "date": "2026-10-20",
+   "modal_price": 2290,
+   "arrivals": 303
+  },
+  {
+   "commodity": "Maize",
+   "state": "Uttar Pradesh",
+   "district": "Unnao",
+   "market": "Unnao",
+   "date": "2026-10-14",
+   "modal_price": 2180,
+   "arrivals": 239
+  },
+  {
+   "commodity": "Maize",
+   "state": "Uttar Pradesh",
+   "district": "Unnao",
+   "market": "Unnao",
+   "date": "2026-10-15",
+   "modal_price": 2220,
+   "arrivals": 88
+  },
+  {
+   "commodity": "Maize",
+   "state": "Uttar Pradesh",
+   "district": "Unnao",
+   "market": "Unnao",
+   "date": "2026-10-16",
+   "modal_price": 2220,
+   "arrivals": 145
+  },
+  {
+   "commodity": "Maize",
+   "state": "Uttar Pradesh",
+   "district": "Unnao",
+   "market": "Unnao",
+   "date": "2026-10-17",
+   "modal_price": 2220,
+   "arrivals": 393
+  },
+  {
+   "commodity": "Maize",
+   "state": "Uttar Pradesh",
+   "district": "Unnao",
+   "market": "Unnao",
+   "date": "2026-10-18",
+   "modal_price": 2250,
+   "arrivals": 252
+  },
+  {
+   "commodity": "Maize",
+   "state": "Uttar Pradesh",
+   "district": "Unnao",
+   "market": "Unnao",
+   "date": "2026-10-19",
+   "modal_price": 2240,
+   "arrivals": 354
+  },
+  {
+   "commodity": "Maize",
+   "state": "Uttar Pradesh",
+   "district": "Unnao",
+   "market": "Unnao",
+   "date": "2026-10-20",
+   "modal_price": null,
+   "arrivals": null
+  },
+  {
+   "commodity": "Mustard",
+   "state": "Uttar Pradesh",
+   "district": "Unnao",
+   "market": "Unnao",
+   "date": "2026-10-14",
+   "modal_price": 6480,
+   "arrivals": 329
+  },
+  {
+   "commodity": "Mustard",
+   "state": "Uttar Pradesh",
+   "district": "Unnao",
+   "market": "Unnao",
+   "date": "2026-10-15",
+   "modal_price": 6430,
+   "arrivals": 113
+  },
+  {
+   "commodity": "Mustard",
+   "state": "Uttar Pradesh",
+   "district": "Unnao",
+   "market": "Unnao",
+   "date": "2026-10-16",
+   "modal_price": 6470,
+   "arrivals": 226
+  },
+  {
+   "commodity": "Mustard",
+   "state": "Uttar Pradesh",
+   "district": "Unnao",
+   "market": "Unnao",
+   "date": "2026-10-17",
+   "modal_price": 6440,
+   "arrivals": 34
+  },
+  {
+   "commodity": "Mustard",
+   "state": "Uttar Pradesh",
+   "district": "Unnao",
+   "market": "Unnao",
+   "date": "2026-10-18",
+   "modal_price": 6430,
+   "arrivals": 220
+  },
+  {
+   "commodity": "Mustard",
+   "state": "Uttar Pradesh",
+   "district": "Unnao",
+   "market": "Unnao",
+   "date": "2026-10-19",
+   "modal_price": 6390,
+   "arrivals": 73
+  },
+  {
+   "commodity": "Mustard",
+   "state": "Uttar Pradesh",
+   "district": "Unnao",
+   "market": "Unnao",
+   "date": "2026-10-20",
+   "modal_price": 6430,
+   "arrivals": 345
+  },
+  {
+   "commodity": "Potato",
+   "state": "Uttar Pradesh",
+   "district": "Unnao",
+   "market": "Unnao",
+   "date": "2026-10-14",
+   "modal_price": 1660,
+   "arrivals": 244
+  },
+  {
+   "commodity": "Potato",
+   "state": "Uttar Pradesh",
+   "district": "Unnao",
+   "market": "Unnao",
+   "date": "2026-10-15",
+   "modal_price": 1680,
+   "arrivals": 109
+  },
+  {
+   "commodity": "Potato",
+   "state": "Uttar Pradesh",
+   "district": "Unnao",
+   "market": "Unnao",
+   "date": "2026-10-16",
+   "modal_price": 1680,
+   "arrivals": 64
+  },
+  {
+   "commodity": "Potato",
+   "state": "Uttar Pradesh",
+   "district": "Unnao",
+   "market": "Unnao",
+   "date": "2026-10-17",
+   "modal_price": 1700,
+   "arrivals": 194
+  },
+  {
+   "commodity": "Potato",
+   "state": "Uttar Pradesh",
+   "district": "Unnao",
+   "market": "Unnao",
+   "date": "2026-10-18",
+   "modal_price": 1700,
+   "arrivals": 68
+  },
+  {
+   "commodity": "Potato",
+   "state": "Uttar Pradesh",
+   "district": "Unnao",
+   "market": "Unnao",
+   "date": "2026-10-19",
+   "modal_price": 1730,
+   "arrivals": 241
+  },
+  {
+   "commodity": "Potato",
+   "state": "Uttar Pradesh",
+   "district": "Unnao",
+   "market": "Unnao",
+   "date": "2026-10-20",
+   "modal_price": 1700,
+   "arrivals": 64
+  },
+  {
+   "commodity": "Onion",
+   "state": "Uttar Pradesh",
+   "district": "Unnao",
+   "market": "Unnao",
+   "date": "2026-10-14",
+   "modal_price": null,
+   "arrivals": null
+  },
+  {
+   "commodity": "Onion",
+   "state": "Uttar Pradesh",
+   "district": "Unnao",
+   "market": "Unnao",
+   "date": "2026-10-15",
+   "modal_price": null,
+   "arrivals": null
+  },
+  {
+   "commodity": "Onion",
+   "state": "Uttar Pradesh",
+   "district": "Unnao",
+   "market": "Unnao",
+   "date": "2026-10-16",
+   "modal_price": null,
+   "arrivals": null
+  },
+  {
+   "commodity": "Onion",
+   "state": "Uttar Pradesh",
+   "district": "Unnao",
+   "market": "Unnao",
+   "date": "2026-10-17",
+   "modal_price": null,
+   "arrivals": null
+  },
+  {
+   "commodity": "Onion",
+   "state": "Uttar Pradesh",
+   "district": "Unnao",
+   "market": "Unnao",
+   "date": "2026-10-18",
+   "modal_price": null,
+   "arrivals": null
+  },
+  {
+   "commodity": "Onion",
+   "state": "Uttar Pradesh",
+   "district": "Unnao",
+   "market": "Unnao",
+   "date": "2026-10-19",
+   "modal_price": null,
+   "arrivals": null
+  },
+  {
+   "commodity": "Onion",
+   "state": "Uttar Pradesh",
+   "district": "Unnao",
+   "market": "Unnao",
+   "date": "2026-10-20",
+   "modal_price": null,
+   "arrivals": null
+  },
+  {
+   "commodity": "Tomato",
+   "state": "Uttar Pradesh",
+   "district": "Unnao",
+   "market": "Unnao",
+   "date": "2026-10-14",
+   "modal_price": 2880,
+   "arrivals": 173
+  },
+  {
+   "commodity": "Tomato",
+   "state": "Uttar Pradesh",
+   "district": "Unnao",
+   "market": "Unnao",
+   "date": "2026-10-15",
+   "modal_price": 2890,
+   "arrivals": 216
+  },
+  {
+   "commodity": "Tomato",
+   "state": "Uttar Pradesh",
+   "district": "Unnao",
+   "market": "Unnao",
+   "date": "2026-10-16",
+   "modal_price": 2860,
+   "arrivals": 96
+  },
+  {
+   "commodity": "Tomato",
+   "state": "Uttar Pradesh",
+   "district": "Unnao",
+   "market": "Unnao",
+   "date": "2026-10-17",
+   "modal_price": 2860,
+   "arrivals": 270
+  },
+  {
+   "commodity": "Tomato",
+   "state": "Uttar Pradesh",
+   "district": "Unnao",
+   "market": "Unnao",
+   "date": "2026-10-18",
+   "modal_price": 2890,
+   "arrivals": 163
+  },
+  {
+   "commodity": "Tomato",
+   "state": "Uttar Pradesh",
+   "district": "Unnao",
+   "market": "Unnao",
+   "date": "2026-10-19",
+   "modal_price": 2880,
+   "arrivals": 46
+  },
+  {
+   "commodity": "Tomato",
+   "state": "Uttar Pradesh",
+   "district": "Unnao",
+   "market": "Unnao",
+   "date": "2026-10-20",
+   "modal_price": 2860,
+   "arrivals": 55
+  },
+  {
+   "commodity": "Wheat",
+   "state": "Uttar Pradesh",
+   "district": "Barabanki",
+   "market": "Barabanki",
+   "date": "2026-10-14",
+   "modal_price": 2480,
+   "arrivals": 236
+  },
+  {
+   "commodity": "Wheat",
+   "state": "Uttar Pradesh",
+   "district": "Barabanki",
+   "market": "Barabanki",
+   "date": "2026-10-15",
+   "modal_price": 2480,
+   "arrivals": 224
+  },
+  {
+   "commodity": "Wheat",
+   "state": "Uttar Pradesh",
+   "district": "Barabanki",
+   "market": "Barabanki",
+   "date": "2026-10-16",
+   "modal_price": 2470,
+   "arrivals": 133
+  },
+  {
+   "commodity": "Wheat",
+   "state": "Uttar Pradesh",
+   "district": "Barabanki",
+   "market": "Barabanki",
+   "date": "2026-10-17",
+   "modal_price": 2470,
+   "arrivals": 123
+  },
+  {
+   "commodity": "Wheat",
+   "state": "Uttar Pradesh",
+   "district": "Barabanki",
+   "market": "Barabanki",
+   "date": "2026-10-18",
+   "modal_price": 2460,
+   "arrivals": 404
+  },
+  {
+   "commodity": "Wheat",
+   "state": "Uttar Pradesh",
+   "district": "Barabanki",
+   "market": "Barabanki",
+   "date": "2026-10-19",
+   "modal_price": 2450,
+   "arrivals": 280
+  },
+  {
+   "commodity": "Wheat",
+   "state": "Uttar Pradesh",
+   "district": "Barabanki",
+   "market": "Barabanki",
+   "date": "2026-10-20",
+   "modal_price": 2430,
+   "arrivals": 332
+  },
+  {
+   "commodity": "Paddy (Dhan)",
+   "state": "Uttar Pradesh",
+   "district": "Barabanki",
+   "market": "Barabanki",
+   "date": "2026-10-14",
+   "modal_price": 2220,
+   "arrivals": 319
+  },
+  {
+   "commodity": "Paddy (Dhan)",
+   "state": "Uttar Pradesh",
+   "district": "Barabanki",
+   "market": "Barabanki",
+   "date": "2026-10-15",
+   "modal_price": 2200,
+   "arrivals": 84
+  },
+  {
+   "commodity": "Paddy (Dhan)",
+   "state": "Uttar Pradesh",
+   "district": "Barabanki",
+   "market": "Barabanki",
+   "date": "2026-10-16",
+   "modal_price": 2200,
+   "arrivals": 102
+  },
+  {
+   "commodity": "Paddy (Dhan)",
+   "state": "Uttar Pradesh",
+   "district": "Barabanki",
+   "market": "Barabanki",
+   "date": "2026-10-17",
+   "modal_price": 2210,
+   "arrivals": 109
+  },
+  {
+   "commodity": "Paddy (Dhan)",
+   "state": "Uttar Pradesh",
+   "district": "Barabanki",
+   "market": "Barabanki",
+   "date": "2026-10-18",
+   "modal_price": 2190,
+   "arrivals": 82
+  },
+  {
+   "commodity": "Paddy (Dhan)",
+   "state": "Uttar Pradesh",
+   "district": "Barabanki",
+   "market": "Barabanki",
+   "date": "2026-10-19",
+   "modal_price": 2200,
+   "arrivals": 293
+  },
+  {
+   "commodity": "Paddy (Dhan)",
+   "state": "Uttar Pradesh",
+   "district": "Barabanki",
+   "market": "Barabanki",
+   "date": "2026-10-20",
+   "modal_price": 2220,
+   "arrivals": 388
+  },
+  {
+   "commodity": "Maize",
+   "state": "Uttar Pradesh",
+   "district": "Barabanki",
+   "market": "Barabanki",
+   "date": "2026-10-14",
+   "modal_price": 2120,
+   "arrivals": 191
+  },
+  {
+   "commodity": "Maize",
+   "state": "Uttar Pradesh",
+   "district": "Barabanki",
+   "market": "Barabanki",
+   "date": "2026-10-15",
+   "modal_price": null,
+   "arrivals": null
+  },
+  {
+   "commodity": "Maize",
+   "state": "Uttar Pradesh",
+   "district": "Barabanki",
+   "market": "Barabanki",
+   "date": "2026-10-16",
+   "modal_price": 2140,
+   "arrivals": 356
+  },
+  {
+   "commodity": "Maize",
+   "state": "Uttar Pradesh",
+   "district": "Barabanki",
+   "market": "Barabanki",
+   "date": "2026-10-17",
+   "modal_price": 2130,
+   "arrivals": 404
+  },
+  {
+   "commodity": "Maize",
+   "state": "Uttar Pradesh",
+   "district": "Barabanki",
+   "market": "Barabanki",
+   "date": "2026-10-18",
+   "modal_price": 2120,
+   "arrivals": 189
+  },
+  {
+   "commodity": "Maize",
+   "state": "Uttar Pradesh",
+   "district": "Barabanki",
+   "market": "Barabanki",
+   "date": "2026-10-19",
+   "modal_price": 2130,
+   "arrivals": 93
+  },
+  {
+   "commodity": "Maize",
+   "state": "Uttar Pradesh",
+   "district": "Barabanki",
+   "market": "Barabanki",
+   "date": "2026-10-20",
+   "modal_price": 2140,
+   "arrivals": 406
+  },
+  {
+   "commodity": "Mustard",
+   "state": "Uttar Pradesh",
+   "district": "Barabanki",
+   "market": "Barabanki",
+   "date": "2026-10-14",
+   "modal_price": 6360,
+   "arrivals": 251
+  },
+  {
+   "commodity": "Mustard",
+   "state": "Uttar Pradesh",
+   "district": "Barabanki",
+   "market": "Barabanki",
+   "date": "2026-10-15",
+   "modal_price": null,
+   "arrivals": null
+  },
+  {
+   "commodity": "Mustard",
+   "state": "Uttar Pradesh",
+   "district": "Barabanki",
+   "market": "Barabanki",
+   "date": "2026-10-16",
+   "modal_price": 6340,
+   "arrivals": 210
+  },
+  {
+   "commodity": "Mustard",
+   "state": "Uttar Pradesh",
+   "district": "Barabanki",
+   "market": "Barabanki",
+   "date": "2026-10-17",
+   "modal_price": 6390,
+   "arrivals": 360
+  },
+  {
+   "commodity": "Mustard",
+   "state": "Uttar Pradesh",
+   "district": "Barabanki",
+   "market": "Barabanki",
+   "date": "2026-10-18",
+   "modal_price": 6360,
+   "arrivals": 321
+  },
+  {
+   "commodity": "Mustard",
+   "state": "Uttar Pradesh",
+   "district": "Barabanki",
+   "market": "Barabanki",
+   "date": "2026-10-19",
+   "modal_price": 6330,
+   "arrivals": 302
+  },
+  {
+   "commodity": "Mustard",
+   "state": "Uttar Pradesh",
+   "district": "Barabanki",
+   "market": "Barabanki",
+   "date": "2026-10-20",
+   "modal_price": 6300,
+   "arrivals": 143
+  },
+  {
+   "commodity": "Potato",
+   "state": "Uttar Pradesh",
+   "district": "Barabanki",
+   "market": "Barabanki",
+   "date": "2026-10-14",
+   "modal_price": 1590,
+   "arrivals": 57
+  },
+  {
+   "commodity": "Potato",
+   "state": "Uttar Pradesh",
+   "district": "Barabanki",
+   "market": "Barabanki",
+   "date": "2026-10-15",
+   "modal_price": 1580,
+   "arrivals": 314
+  },
+  {
+   "commodity": "Potato",
+   "state": "Uttar Pradesh",
+   "district": "Barabanki",
+   "market": "Barabanki",
+   "date": "2026-10-16",
+   "modal_price": 1590,
+   "arrivals": 364
+  },
+  {
+   "commodity": "Potato",
+   "state": "Uttar Pradesh",
+   "district": "Barabanki",
+   "market": "Barabanki",
+   "date": "2026-10-17",
+   "modal_price": 1590,
+   "arrivals": 66
+  },
+  {
+   "commodity": "Potato",
+   "state": "Uttar Pradesh",
+   "district": "Barabanki",
+   "market": "Barabanki",
+   "date": "2026-10-18",
+   "modal_price": 1610,
+   "arrivals": 398
+  },
+  {
+   "commodity": "Potato",
+   "state": "Uttar Pradesh",
+   "district": "Barabanki",
+   "market": "Barabanki",
+   "date": "2026-10-19",
+   "modal_price": null,
+   "arrivals": null
+  },
+  {
+   "commodity": "Potato",
+   "state": "Uttar Pradesh",
+   "district": "Barabanki",
+   "market": "Barabanki",
+   "date": "2026-10-20",
+   "modal_price": 1580,
+   "arrivals": 397
+  },
+  {
+   "commodity": "Onion",
+   "state": "Uttar Pradesh",
+   "district": "Barabanki",
+   "market": "Barabanki",
+   "date": "2026-10-14",
+   "modal_price": null,
+   "arrivals": null
+  },
+  {
+   "commodity": "Onion",
+   "state": "Uttar Pradesh",
+   "district": "Barabanki",
+   "market": "Barabanki",
+   "date": "2026-10-15",
+   "modal_price": 2190,
+   "arrivals": 205
+  },
+  {
+   "commodity": "Onion",
+   "state": "Uttar Pradesh",
+   "district": "Barabanki",
+   "market": "Barabanki",
+   "date": "2026-10-16",
+   "modal_price": 2200,
+   "arrivals": 360
+  },
+  {
+   "commodity": "Onion",
+   "state": "Uttar Pradesh",
+   "district": "Barabanki",
+   "market": "Barabanki",
+   "date": "2026-10-17",
+   "modal_price": 2180,
+   "arrivals": 187
+  },
+  {
+   "commodity": "Onion",
+   "state": "Uttar Pradesh",
+   "district": "Barabanki",
+   "market": "Barabanki",
+   "date": "2026-10-18",
+   "modal_price": null,
+   "arrivals": null
+  },
+  {
+   "commodity": "Onion",
+   "state": "Uttar Pradesh",
+   "district": "Barabanki",
+   "market": "Barabanki",
+   "date": "2026-10-19",
+   "modal_price": 2160,
+   "arrivals": 321
+  },
+  {
+   "commodity": "Onion",
+   "state": "Uttar Pradesh",
+   "district": "Barabanki",
+   "market": "Barabanki",
+   "date": "2026-10-20",
+   "modal_price": 2190,
+   "arrivals": 188
+  },
+  {
+   "commodity": "Tomato",
+   "state": "Uttar Pradesh",
+   "district": "Barabanki",
+   "market": "Barabanki",
+   "date": "2026-10-14",
+   "modal_price": 2890,
+   "arrivals": 24
+  },
+  {
+   "commodity": "Tomato",
+   "state": "Uttar Pradesh",
+   "district": "Barabanki",
+   "market": "Barabanki",
+   "date": "2026-10-15",
+   "modal_price": 2860,
+   "arrivals": 306
+  },
+  {
+   "commodity": "Tomato",
+   "state": "Uttar Pradesh",
+   "district": "Barabanki",
+   "market": "Barabanki",
+   "date": "2026-10-16",
+   "modal_price": 2890,
+   "arrivals": 105
+  },
+  {
+   "commodity": "Tomato",
+   "state": "Uttar Pradesh",
+   "district": "Barabanki",
+   "market": "Barabanki",
+   "date": "2026-10-17",
+   "modal_price": 2890,
+   "arrivals": 374
+  },
+  {
+   "commodity": "Tomato",
+   "state": "Uttar Pradesh",
+   "district": "Barabanki",
+   "market": "Barabanki",
+   "date": "2026-10-18",
+   "modal_price": 2880,
+   "arrivals": 354
+  },
+  {
+   "commodity": "Tomato",
+   "state": "Uttar Pradesh",
+   "district": "Barabanki",
+   "market": "Barabanki",
+   "date": "2026-10-19",
+   "modal_price": 2910,
+   "arrivals": 391
+  },
+  {
+   "commodity": "Tomato",
+   "state": "Uttar Pradesh",
+   "district": "Barabanki",
+   "market": "Barabanki",
+   "date": "2026-10-20",
+   "modal_price": 2880,
+   "arrivals": 313
+  },
+  {
+   "commodity": "Wheat",
+   "state": "Uttar Pradesh",
+   "district": "Sitapur",
+   "market": "Sitapur",
+   "date": "2026-10-14",
+   "modal_price": 2420,
+   "arrivals": 142
+  },
+  {
+   "commodity": "Wheat",
+   "state": "Uttar Pradesh",
+   "district": "Sitapur",
+   "market": "Sitapur",
+   "date": "2026-10-15",
+   "modal_price": 2420,
+   "arrivals": 171
+  },
+  {
+   "commodity": "Wheat",
+   "state": "Uttar Pradesh",
+   "district": "Sitapur",
+   "market": "Sitapur",
+   "date": "2026-10-16",
+   "modal_price": 2430,
+   "arrivals": 316
+  },
+  {
+   "commodity": "Wheat",
+   "state": "Uttar Pradesh",
+   "district": "Sitapur",
+   "market": "Sitapur",
+   "date": "2026-10-17",
+   "modal_price": 2430,
+   "arrivals": 253
+  },
+  {
+   "commodity": "Wheat",
+   "state": "Uttar Pradesh",
+   "district": "Sitapur",
+   "market": "Sitapur",
+   "date": "2026-10-18",
+   "modal_price": 2440,
+   "arrivals": 337
+  },
+  {
+   "commodity": "Wheat",
+   "state": "Uttar Pradesh",
+   "district": "Sitapur",
+   "market": "Sitapur",
+   "date": "2026-10-19",
+   "modal_price": 2440,
+   "arrivals": 151
+  },
+  {
+   "commodity": "Wheat",
+   "state": "Uttar Pradesh",
+   "district": "Sitapur",
+   "market": "Sitapur",
+   "date": "2026-10-20",
+   "modal_price": 2440,
+   "arrivals": 396
+  },
+  {
+   "commodity": "Paddy (Dhan)",
+   "state": "Uttar Pradesh",
+   "district": "Sitapur",
+   "market": "Sitapur",
+   "date": "2026-10-14",
+   "modal_price": 2370,
+   "arrivals": 212
+  },
+  {
+   "commodity": "Paddy (Dhan)",
+   "state": "Uttar Pradesh",
+   "district": "Sitapur",
+   "market": "Sitapur",
+   "date": "2026-10-15",
+   "modal_price": 2350,
+   "arrivals": 161
+  },
+  {
+   "commodity": "Paddy (Dhan)",
+   "state": "Uttar Pradesh",
+   "district": "Sitapur",
+   "market": "Sitapur",
+   "date": "2026-10-16",
+   "modal_price": 2380,
+   "arrivals": 181
+  },
+  {
+   "commodity": "Paddy (Dhan)",
+   "state": "Uttar Pradesh",
+   "district": "Sitapur",
+   "market": "Sitapur",
+   "date": "2026-10-17",
+   "modal_price": 2370,
+   "arrivals": 190
+  },
+  {
+   "commodity": "Paddy (Dhan)",
+   "state": "Uttar Pradesh",
+   "district": "Sitapur",
+   "market": "Sitapur",
+   "date": "2026-10-18",
+   "modal_price": 2400,
+   "arrivals": 117
+  },
+  {
+   "commodity": "Paddy (Dhan)",
+   "state": "Uttar Pradesh",
+   "district": "Sitapur",
+   "market": "Sitapur",
+   "date": "2026-10-19",
+   "modal_price": 2390,
+   "arrivals": 347
+  },
+  {
+   "commodity": "Paddy (Dhan)",
+   "state": "Uttar Pradesh",
+   "district": "Sitapur",
+   "market": "Sitapur",
+   "date": "2026-10-20",
+   "modal_price": 2360,
+   "arrivals": 224
+  },
+  {
+   "commodity": "Maize",
+   "state": "Uttar Pradesh",
+   "district": "Sitapur",
+   "market": "Sitapur",
+   "date": "2026-10-14",
+   "modal_price": 2120,
+   "arrivals": 98
+  },
+  {
+   "commodity": "Maize",
+   "state": "Uttar Pradesh",
+   "district": "Sitapur",
+   "market": "Sitapur",
+   "date": "2026-10-15",
+   "modal_price": 2130,
+   "arrivals": 377
+  },
+  {
+   "commodity": "Maize",
+   "state": "Uttar Pradesh",
+   "district": "Sitapur",
+   "market": "Sitapur",
+   "date": "2026-10-16",
+   "modal_price": 2140,
+   "arrivals": 66
+  },
+  {
+   "commodity": "Maize",
+   "state": "Uttar Pradesh",
+   "district": "Sitapur",
+   "market": "Sitapur",
+   "date": "2026-10-17",
+   "modal_price": 2160,
+   "arrivals": 60
+  },
+  {
+   "commodity": "Maize",
+   "state": "Uttar Pradesh",
+   "district": "Sitapur",
+   "market": "Sitapur",
+   "date": "2026-10-18",
+   "modal_price": 2140,
+   "arrivals": 376
+  },
+  {
+   "commodity": "Maize",
+   "state": "Uttar Pradesh",
+   "district": "Sitapur",
+   "market": "Sitapur",
+   "date": "2026-10-19",
+   "modal_price": 2120,
+   "arrivals": 315
+  },
+  {
+   "commodity": "Maize",
+   "state": "Uttar Pradesh",
+   "district": "Sitapur",
+   "market": "Sitapur",
+   "date": "2026-10-20",
+   "modal_price": 2150,
+   "arrivals": 183
+  },
+  {
+   "commodity": "Mustard",
+   "state": "Uttar Pradesh",
+   "district": "Sitapur",
+   "market": "Sitapur",
+   "date": "2026-10-14",
+   "modal_price": 6220,
+   "arrivals": 333
+  },
+  {
+   "commodity": "Mustard",
+   "state": "Uttar Pradesh",
+   "district": "Sitapur",
+   "market": "Sitapur",
+   "date": "2026-10-15",
+   "modal_price": 6220,
+   "arrivals": 194
+  },
+  {
+   "commodity": "Mustard",
+   "state": "Uttar Pradesh",
+   "district": "Sitapur",
+   "market": "Sitapur",
+   "date": "2026-10-16",
+   "modal_price": 6260,
+   "arrivals": 313
+  },
+  {
+   "commodity": "Mustard",
+   "state": "Uttar Pradesh",
+   "district": "Sitapur",
+   "market": "Sitapur",
+   "date": "2026-10-17",
+   "modal_price": 6290,
+   "arrivals": 304
+  },
+  {
+   "commodity": "Mustard",
+   "state": "Uttar Pradesh",
+   "district": "Sitapur",
+   "market": "Sitapur",
+   "date": "2026-10-18",
+   "modal_price": 6320,
+   "arrivals": 297
+  },
+  {
+   "commodity": "Mustard",
+   "state": "Uttar Pradesh",
+   "district": "Sitapur",
+   "market": "Sitapur",
+   "date": "2026-10-19",
+   "modal_price": 6350,
+   "arrivals": 25
+  },
+  {
+   "commodity": "Mustard",
+   "state": "Uttar Pradesh",
+   "district": "Sitapur",
+   "market": "Sitapur",
+   "date": "2026-10-20",
+   "modal_price": 6400,
+   "arrivals": 254
+  },
+  {
+   "commodity": "Potato",
+   "state": "Uttar Pradesh",
+   "district": "Sitapur",
+   "market": "Sitapur",
+   "date": "2026-10-14",
+   "modal_price": 1620,
+   "arrivals": 407
+  },
+  {
+   "commodity": "Potato",
+   "state": "Uttar Pradesh",
+   "district": "Sitapur",
+   "market": "Sitapur",
+   "date": "2026-10-15",
+   "modal_price": 1610,
+   "arrivals": 132
+  },
+  {
+   "commodity": "Potato",
+   "state": "Uttar Pradesh",
+   "district": "Sitapur",
+   "market": "Sitapur",
+   "date": "2026-10-16",
+   "modal_price": 1590,
+   "arrivals": 169
+  },
+  {
+   "commodity": "Potato",
+   "state": "Uttar Pradesh",
+   "district": "Sitapur",
+   "market": "Sitapur",
+   "date": "2026-10-17",
+   "modal_price": null,
+   "arrivals": null
+  },
+  {
+   "commodity": "Potato",
+   "state": "Uttar Pradesh",
+   "district": "Sitapur",
+   "market": "Sitapur",
+   "date": "2026-10-18",
+   "modal_price": 1570,
+   "arrivals": 224
+  },
+  {
+   "commodity": "Potato",
+   "state": "Uttar Pradesh",
+   "district": "Sitapur",
+   "market": "Sitapur",
+   "date": "2026-10-19",
+   "modal_price": 1580,
+   "arrivals": 398
+  },
+  {
+   "commodity": "Potato",
+   "state": "Uttar Pradesh",
+   "district": "Sitapur",
+   "market": "Sitapur",
+   "date": "2026-10-20",
+   "modal_price": 1570,
+   "arrivals": 315
+  },
+  {
+   "commodity": "Onion",
+   "state": "Uttar Pradesh",
+   "district": "Sitapur",
+   "market": "Sitapur",
+   "date": "2026-10-14",
+   "modal_price": 2250,
+   "arrivals": 132
+  },
+  {
+   "commodity": "Onion",
+   "state": "Uttar Pradesh",
+   "district": "Sitapur",
+   "market": "Sitapur",
+   "date": "2026-10-15",
+   "modal_price": 2250,
+   "arrivals": 384
+  },
+  {
+   "commodity": "Onion",
+   "state": "Uttar Pradesh",
+   "district": "Sitapur",
+   "market": "Sitapur",
+   "date": "2026-10-16",
+   "modal_price": 2280,
+   "arrivals": 236
+  },
+  {
+   "commodity": "Onion",
+   "state": "Uttar Pradesh",
+   "district": "Sitapur",
+   "market": "Sitapur",
+   "date": "2026-10-17",
+   "modal_price": 2310,
+   "arrivals": 392
+  },
+  {
+   "commodity": "Onion",
+   "state": "Uttar Pradesh",
+   "district": "Sitapur",
+   "market": "Sitapur",
+   "date": "2026-10-18",
+   "modal_price": 2280,
+   "arrivals": 220
+  },
+  {
+   "commodity": "Onion",
+   "state": "Uttar Pradesh",
+   "district": "Sitapur",
+   "market": "Sitapur",
+   "date": "2026-10-19",
+   "modal_price": 2280,
+   "arrivals": 173
+  },
+  {
+   "commodity": "Onion",
+   "state": "Uttar Pradesh",
+   "district": "Sitapur",
+   "market": "Sitapur",
+   "date": "2026-10-20",
+   "modal_price": 2260,
+   "arrivals": 83
+  },
+  {
+   "commodity": "Tomato",
+   "state": "Uttar Pradesh",
+   "district": "Sitapur",
+   "market": "Sitapur",
+   "date": "2026-10-14",
+   "modal_price": 2710,
+   "arrivals": 153
+  },
+  {
+   "commodity": "Tomato",
+   "state": "Uttar Pradesh",
+   "district": "Sitapur",
+   "market": "Sitapur",
+   "date": "2026-10-15",
+   "modal_price": 2760,
+   "arrivals": 186
+  },
+  {
+   "commodity": "Tomato",
+   "state": "Uttar Pradesh",
+   "district": "Sitapur",
+   "market": "Sitapur",
+   "date": "2026-10-16",
+   "modal_price": 2730,
+   "arrivals": 72
+  },
+  {
+   "commodity": "Tomato",
+   "state": "Uttar Pradesh",
+   "district": "Sitapur",
+   "market": "Sitapur",
+   "date": "2026-10-17",
+   "modal_price": 2740,
+   "arrivals": 105
+  },
+  {
+   "commodity": "Tomato",
+   "state": "Uttar Pradesh",
+   "district": "Sitapur",
+   "market": "Sitapur",
+   "date": "2026-10-18",
+   "modal_price": 2710,
+   "arrivals": 134
+  },
+  {
+   "commodity": "Tomato",
+   "state": "Uttar Pradesh",
+   "district": "Sitapur",
+   "market": "Sitapur",
+   "date": "2026-10-19",
+   "modal_price": 2750,
+   "arrivals": 319
+  },
+  {
+   "commodity": "Tomato",
+   "state": "Uttar Pradesh",
+   "district": "Sitapur",
+   "market": "Sitapur",
+   "date": "2026-10-20",
+   "modal_price": 2710,
+   "arrivals": 38
+  },
+  {
+   "commodity": "Wheat",
+   "state": "Uttar Pradesh",
+   "district": "Raebareli",
+   "market": "Raebareli",
+   "date": "2026-10-14",
+   "modal_price": null,
+   "arrivals": null
+  },
+  {
+   "commodity": "Wheat",
+   "state": "Uttar Pradesh",
+   "district": "Raebareli",
+   "market": "Raebareli",
+   "date": "2026-10-15",
+   "modal_price": null,
+   "arrivals": null
+  },
+  {
+   "commodity": "Wheat",
+   "state": "Uttar Pradesh",
+   "district": "Raebareli",
+   "market": "Raebareli",
+   "date": "2026-10-16",
+   "modal_price": null,
+   "arrivals": null
+  },
+  {
+   "commodity": "Wheat",
+   "state": "Uttar Pradesh",
+   "district": "Raebareli",
+   "market": "Raebareli",
+   "date": "2026-10-17",
+   "modal_price": null,
+   "arrivals": null
+  },
+  {
+   "commodity": "Wheat",
+   "state": "Uttar Pradesh",
+   "district": "Raebareli",
+   "market": "Raebareli",
+   "date": "2026-10-18",
+   "modal_price": null,
+   "arrivals": null
+  },
+  {
+   "commodity": "Wheat",
+   "state": "Uttar Pradesh",
+   "district": "Raebareli",
+   "market": "Raebareli",
+   "date": "2026-10-19",
+   "modal_price": null,
+   "arrivals": null
+  },
+  {
+   "commodity": "Wheat",
+   "state": "Uttar Pradesh",
+   "district": "Raebareli",
+   "market": "Raebareli",
+   "date": "2026-10-20",
+   "modal_price": null,
+   "arrivals": null
+  },
+  {
+   "commodity": "Paddy (Dhan)",
+   "state": "Uttar Pradesh",
+   "district": "Raebareli",
+   "market": "Raebareli",
+   "date": "2026-10-14",
+   "modal_price": 2400,
+   "arrivals": 254
+  },
+  {
+   "commodity": "Paddy (Dhan)",
+   "state": "Uttar Pradesh",
+   "district": "Raebareli",
+   "market": "Raebareli",
+   "date": "2026-10-15",
+   "modal_price": 2390,
+   "arrivals": 310
+  },
+  {
+   "commodity": "Paddy (Dhan)",
+   "state": "Uttar Pradesh",
+   "district": "Raebareli",
+   "market": "Raebareli",
+   "date": "2026-10-16",
+   "modal_price": 2410,
+   "arrivals": 136
+  },
+  {
+   "commodity": "Paddy (Dhan)",
+   "state": "Uttar Pradesh",
+   "district": "Raebareli",
+   "market": "Raebareli",
+   "date": "2026-10-17",
+   "modal_price": 2390,
+   "arrivals": 135
+  },
+  {
+   "commodity": "Paddy (Dhan)",
+   "state": "Uttar Pradesh",
+   "district": "Raebareli",
+   "market": "Raebareli",
+   "date": "2026-10-18",
+   "modal_price": 2420,
+   "arrivals": 269
+  },
+  {
+   "commodity": "Paddy (Dhan)",
+   "state": "Uttar Pradesh",
+   "district": "Raebareli",
+   "market": "Raebareli",
+   "date": "2026-10-19",
+   "modal_price": 2390,
+   "arrivals": 50
+  },
+  {
+   "commodity": "Paddy (Dhan)",
+   "state": "Uttar Pradesh",
+   "district": "Raebareli",
+   "market": "Raebareli",
+   "date": "2026-10-20",
+   "modal_price": 2390,
+   "arrivals": 405
+  },
+  {
+   "commodity": "Maize",
+   "state": "Uttar Pradesh",
+   "district": "Raebareli",
+   "market": "Raebareli",
+   "date": "2026-10-14",
+   "modal_price": 2170,
+   "arrivals": 210
+  },
+  {
+   "commodity": "Maize",
+   "state": "Uttar Pradesh",
+   "district": "Raebareli",
+   "market": "Raebareli",
+   "date": "2026-10-15",
+   "modal_price": 2160,
+   "arrivals": 323
+  },
+  {
+   "commodity": "Maize",
+   "state": "Uttar Pradesh",
+   "district": "Raebareli",
+   "market": "Raebareli",
+   "date": "2026-10-16",
+   "modal_price": 2170,
+   "arrivals": 192
+  },
+  {
+   "commodity": "Maize",
+   "state": "Uttar Pradesh",
+   "district": "Raebareli",
+   "market": "Raebareli",
+   "date": "2026-10-17",
+   "modal_price": 2140,
+   "arrivals": 349
+  },
+  {
+   "commodity": "Maize",
+   "state": "Uttar Pradesh",
+   "district": "Raebareli",
+   "market": "Raebareli",
+   "date": "2026-10-18",
+   "modal_price": 2160,
+   "arrivals": 403
+  },
+  {
+   "commodity": "Maize",
+   "state": "Uttar Pradesh",
+   "district": "Raebareli",
+   "market": "Raebareli",
+   "date": "2026-10-19",
+   "modal_price": 2140,
+   "arrivals": 283
+  },
+  {
+   "commodity": "Maize",
+   "state": "Uttar Pradesh",
+   "district": "Raebareli",
+   "market": "Raebareli",
+   "date": "2026-10-20",
+   "modal_price": 2110,
+   "arrivals": 161
+  },
+  {
+   "commodity": "Mustard",
+   "state": "Uttar Pradesh",
+   "district": "Raebareli",
+   "market": "Raebareli",
+   "date": "2026-10-14",
+   "modal_price": null,
+   "arrivals": null
+  },
+  {
+   "commodity": "Mustard",
+   "state": "Uttar Pradesh",
+   "district": "Raebareli",
+   "market": "Raebareli",
+   "date": "2026-10-15",
+   "modal_price": 6180,
+   "arrivals": 259
+  },
+  {
+   "commodity": "Mustard",
+   "state": "Uttar Pradesh",
+   "district": "Raebareli",
+   "market": "Raebareli",
+   "date": "2026-10-16",
+   "modal_price": 6210,
+   "arrivals": 194
+  },
+  {
+   "commodity": "Mustard",
+   "state": "Uttar Pradesh",
+   "district": "Raebareli",
+   "market": "Raebareli",
+   "date": "2026-10-17",
+   "modal_price": 6230,
+   "arrivals": 262
+  },
+  {
+   "commodity": "Mustard",
+   "state": "Uttar Pradesh",
+   "district": "Raebareli",
+   "market": "Raebareli",
+   "date": "2026-10-18",
+   "modal_price": 6260,
+   "arrivals": 411
+  },
+  {
+   "commodity": "Mustard",
+   "state": "Uttar Pradesh",
+   "district": "Raebareli",
+   "market": "Raebareli",
+   "date": "2026-10-19",
+   "modal_price": 6230,
+   "arrivals": 29
+  },
+  {
+   "commodity": "Mustard",
+   "state": "Uttar Pradesh",
+   "district": "Raebareli",
+   "market": "Raebareli",
+   "date": "2026-10-20",
+   "modal_price": 6240,
+   "arrivals": 75
+  },
+  {
+   "commodity": "Potato",
+   "state": "Uttar Pradesh",
+   "district": "Raebareli",
+   "market": "Raebareli",
+   "date": "2026-10-14",
+   "modal_price": 1660,
+   "arrivals": 118
+  },
+  {
+   "commodity": "Potato",
+   "state": "Uttar Pradesh",
+   "district": "Raebareli",
+   "market": "Raebareli",
+   "date": "2026-10-15",
+   "modal_price": 1670,
+   "arrivals": 306
+  },
+  {
+   "commodity": "Potato",
+   "state": "Uttar Pradesh",
+   "district": "Raebareli",
+   "market": "Raebareli",
+   "date": "2026-10-16",
+   "modal_price": 1690,
+   "arrivals": 66
+  },
+  {
+   "commodity": "Potato",
+   "state": "Uttar Pradesh",
+   "district": "Raebareli",
+   "market": "Raebareli",
+   "date": "2026-10-17",
+   "modal_price": 1690,
+   "arrivals": 180
+  },
+  {
+   "commodity": "Potato",
+   "state": "Uttar Pradesh",
+   "district": "Raebareli",
+   "market": "Raebareli",
+   "date": "2026-10-18",
+   "modal_price": 1680,
+   "arrivals": 320
+  },
+  {
+   "commodity": "Potato",
+   "state": "Uttar Pradesh",
+   "district": "Raebareli",
+   "market": "Raebareli",
+   "date": "2026-10-19",
+   "modal_price": 1690,
+   "arrivals": 136
+  },
+  {
+   "commodity": "Potato",
+   "state": "Uttar Pradesh",
+   "district": "Raebareli",
+   "market": "Raebareli",
+   "date": "2026-10-20",
+   "modal_price": 1720,
+   "arrivals": 393
+  },
+  {
+   "commodity": "Onion",
+   "state": "Uttar Pradesh",
+   "district": "Raebareli",
+   "market": "Raebareli",
+   "date": "2026-10-14",
+   "modal_price": 2220,
+   "arrivals": 76
+  },
+  {
+   "commodity": "Onion",
+   "state": "Uttar Pradesh",
+   "district": "Raebareli",
+   "market": "Raebareli",
+   "date": "2026-10-15",
+   "modal_price": 2190,
+   "arrivals": 183
+  },
+  {
+   "commodity": "Onion",
+   "state": "Uttar Pradesh",
+   "district": "Raebareli",
+   "market": "Raebareli",
+   "date": "2026-10-16",
+   "modal_price": null,
+   "arrivals": null
+  },
+  {
+   "commodity": "Onion",
+   "state": "Uttar Pradesh",
+   "district": "Raebareli",
+   "market": "Raebareli",
+   "date": "2026-10-17",
+   "modal_price": 2140,
+   "arrivals": 255
+  },
+  {
+   "commodity": "Onion",
+   "state": "Uttar Pradesh",
+   "district": "Raebareli",
+   "market": "Raebareli",
+   "date": "2026-10-18",
+   "modal_price": 2150,
+   "arrivals": 88
+  },
+  {
+   "commodity": "Onion",
+   "state": "Uttar Pradesh",
+   "district": "Raebareli",
+   "market": "Raebareli",
+   "date": "2026-10-19",
+   "modal_price": 2120,
+   "arrivals": 279
+  },
+  {
+   "commodity": "Onion",
+   "state": "Uttar Pradesh",
+   "district": "Raebareli",
+   "market": "Raebareli",
+   "date": "2026-10-20",
+   "modal_price": 2110,
+   "arrivals": 335
+  },
+  {
+   "commodity": "Tomato",
+   "state": "Uttar Pradesh",
+   "district": "Raebareli",
+   "market": "Raebareli",
+   "date": "2026-10-14",
+   "modal_price": 2700,
+   "arrivals": 104
+  },
+  {
+   "commodity": "Tomato",
+   "state": "Uttar Pradesh",
+   "district": "Raebareli",
+   "market": "Raebareli",
+   "date": "2026-10-15",
+   "modal_price": 2720,
+   "arrivals": 306
+  },
+  {
+   "commodity": "Tomato",
+   "state": "Uttar Pradesh",
+   "district": "Raebareli",
+   "market": "Raebareli",
+   "date": "2026-10-16",
+   "modal_price": 2760,
+   "arrivals": 23
+  },
+  {
+   "commodity": "Tomato",
+   "state": "Uttar Pradesh",
+   "district": "Raebareli",
+   "market": "Raebareli",
+   "date": "2026-10-17",
+   "modal_price": 2800,
+   "arrivals": 81
+  },
+  {
+   "commodity": "Tomato",
+   "state": "Uttar Pradesh",
+   "district": "Raebareli",
+   "market": "Raebareli",
+   "date": "2026-10-18",
+   "modal_price": null,
+   "arrivals": null
+  },
+  {
+   "commodity": "Tomato",
+   "state": "Uttar Pradesh",
+   "district": "Raebareli",
+   "market": "Raebareli",
+   "date": "2026-10-19",
+   "modal_price": null,
+   "arrivals": null
+  },
+  {
+   "commodity": "Tomato",
+   "state": "Uttar Pradesh",
+   "district": "Raebareli",
+   "market": "Raebareli",
+   "date": "2026-10-20",
+   "modal_price": null,
+   "arrivals": null
+  },
+  {
+   "commodity": "Wheat",
+   "state": "Uttar Pradesh",
+   "district": "Kanpur Nagar",
+   "market": "Kanpur",
+   "date": "2026-10-14",
+   "modal_price": 2450,
+   "arrivals": 401
+  },
+  {
+   "commodity": "Wheat",
+   "state": "Uttar Pradesh",
+   "district": "Kanpur Nagar",
+   "market": "Kanpur",
+   "date": "2026-10-15",
+   "modal_price": null,
+   "arrivals": null
+  },
+  {
+   "commodity": "Wheat",
+   "state": "Uttar Pradesh",
+   "district": "Kanpur Nagar",
+   "market": "Kanpur",
+   "date": "2026-10-16",
+   "modal_price": 2440,
+   "arrivals": 49
+  },
+  {
+   "commodity": "Wheat",
+   "state": "Uttar Pradesh",
+   "district": "Kanpur Nagar",
+   "market": "Kanpur",
+   "date": "2026-10-17",
+   "modal_price": null,
+   "arrivals": null
+  },
+  {
+   "commodity": "Wheat",
+   "state": "Uttar Pradesh",
+   "district": "Kanpur Nagar",
+   "market": "Kanpur",
+   "date": "2026-10-18",
+   "modal_price": null,
+   "arrivals": null
+  },
+  {
+   "commodity": "Wheat",
+   "state": "Uttar Pradesh",
+   "district": "Kanpur Nagar",
+   "market": "Kanpur",
+   "date": "2026-10-19",
+   "modal_price": 2460,
+   "arrivals": 169
+  },
+  {
+   "commodity": "Wheat",
+   "state": "Uttar Pradesh",
+   "district": "Kanpur Nagar",
+   "market": "Kanpur",
+   "date": "2026-10-20",
+   "modal_price": 2470,
+   "arrivals": 321
+  },
+  {
+   "commodity": "Paddy (Dhan)",
+   "state": "Uttar Pradesh",
+   "district": "Kanpur Nagar",
+   "market": "Kanpur",
+   "date": "2026-10-14",
+   "modal_price": 2270,
+   "arrivals": 94
+  },
+  {
+   "commodity": "Paddy (Dhan)",
+   "state": "Uttar Pradesh",
+   "district": "Kanpur Nagar",
+   "market": "Kanpur",
+   "date": "2026-10-15",
+   "modal_price": 2300,
+   "arrivals": 179
+  },
+  {
+   "commodity": "Paddy (Dhan)",
+   "state": "Uttar Pradesh",
+   "district": "Kanpur Nagar",
+   "market": "Kanpur",
+   "date": "2026-10-16",
+   "modal_price": 2280,
+   "arrivals": 231
+  },
+  {
+   "commodity": "Paddy (Dhan)",
+   "state": "Uttar Pradesh",
+   "district": "Kanpur Nagar",
+   "market": "Kanpur",
+   "date": "2026-10-17",
+   "modal_price": 2300,
+   "arrivals": 345
+  },
+  {
+   "commodity": "Paddy (Dhan)",
+   "state": "Uttar Pradesh",
+   "district": "Kanpur Nagar",
+   "market": "Kanpur",
+   "date": "2026-10-18",
+   "modal_price": 2300,
+   "arrivals": 387
+  },
+  {
+   "commodity": "Paddy (Dhan)",
+   "state": "Uttar Pradesh",
+   "district": "Kanpur Nagar",
+   "market": "Kanpur",
+   "date": "2026-10-19",
+   "modal_price": 2310,
+   "arrivals": 384
+  },
+  {
+   "commodity": "Paddy (Dhan)",
+   "state": "Uttar Pradesh",
+   "district": "Kanpur Nagar",
+   "market": "Kanpur",
+   "date": "2026-10-20",
+   "modal_price": 2280,
+   "arrivals": 344
+  },
+  {
+   "commodity": "Maize",
+   "state": "Uttar Pradesh",
+   "district": "Kanpur Nagar",
+   "market": "Kanpur",
+   "date": "2026-10-14",
+   "modal_price": 2050,
+   "arrivals": 221
+  },
+  {
+   "commodity": "Maize",
+   "state": "Uttar Pradesh",
+   "district": "Kanpur Nagar",
+   "market": "Kanpur",
+   "date": "2026-10-15",
+   "modal_price": 2050,
+   "arrivals": 153
+  },
+  {
+   "commodity": "Maize",
+   "state": "Uttar Pradesh",
+   "district": "Kanpur Nagar",
+   "market": "Kanpur",
+   "date": "2026-10-16",
+   "modal_price": null,
+   "arrivals": null
+  },
+  {
+   "commodity": "Maize",
+   "state": "Uttar Pradesh",
+   "district": "Kanpur Nagar",
+   "market": "Kanpur",
+   "date": "2026-10-17",
+   "modal_price": 2070,
+   "arrivals": 313
+  },
+  {
+   "commodity": "Maize",
+   "state": "Uttar Pradesh",
+   "district": "Kanpur Nagar",
+   "market": "Kanpur",
+   "date": "2026-10-18",
+   "modal_price": 2090,
+   "arrivals": 375
+  },
+  {
+   "commodity": "Maize",
+   "state": "Uttar Pradesh",
+   "district": "Kanpur Nagar",
+   "market": "Kanpur",
+   "date": "2026-10-19",
+   "modal_price": 2100,
+   "arrivals": 44
+  },
+  {
+   "commodity": "Maize",
+   "state": "Uttar Pradesh",
+   "district": "Kanpur Nagar",
+   "market": "Kanpur",
+   "date": "2026-10-20",
+   "modal_price": 2100,
+   "arrivals": 74
+  },
+  {
+   "commodity": "Potato",
+   "state": "Uttar Pradesh",
+   "district": "Kanpur Nagar",
+   "market": "Kanpur",
+   "date": "2026-10-14",
+   "modal_price": 1590,
+   "arrivals": 333
+  },
+  {
+   "commodity": "Potato",
+   "state": "Uttar Pradesh",
+   "district": "Kanpur Nagar",
+   "market": "Kanpur",
+   "date": "2026-10-15",
+   "modal_price": 1600,
+   "arrivals": 390
+  },
+  {
+   "commodity": "Potato",
+   "state": "Uttar Pradesh",
+   "district": "Kanpur Nagar",
+   "market": "Kanpur",
+   "date": "2026-10-16",
+   "modal_price": 1600,
+   "arrivals": 291
+  },
+  {
+   "commodity": "Potato",
+   "state": "Uttar Pradesh",
+   "district": "Kanpur Nagar",
+   "market": "Kanpur",
+   "date": "2026-10-17",
+   "modal_price": 1590,
+   "arrivals": 308
+  },
+  {
+   "commodity": "Potato",
+   "state": "Uttar Pradesh",
+   "district": "Kanpur Nagar",
+   "market": "Kanpur",
+   "date": "2026-10-18",
+   "modal_price": null,
+   "arrivals": null
+  },
+  {
+   "commodity": "Potato",
+   "state": "Uttar Pradesh",
+   "district": "Kanpur Nagar",
+   "market": "Kanpur",
+   "date": "2026-10-19",
+   "modal_price": 1600,
+   "arrivals": 312
+  },
+  {
+   "commodity": "Potato",
+   "state": "Uttar Pradesh",
+   "district": "Kanpur Nagar",
+   "market": "Kanpur",
+   "date": "2026-10-20",
+   "modal_price": 1600,
+   "arrivals": 223
+  },
+  {
+   "commodity": "Onion",
+   "state": "Uttar Pradesh",
+   "district": "Kanpur Nagar",
+   "market": "Kanpur",
+   "date": "2026-10-14",
+   "modal_price": 2380,
+   "arrivals": 101
+  },
+  {
+   "commodity": "Onion",
+   "state": "Uttar Pradesh",
+   "district": "Kanpur Nagar",
+   "market": "Kanpur",
+   "date": "2026-10-15",
+   "modal_price": 2390,
+   "arrivals": 182
+  },
+  {
+   "commodity": "Onion",
+   "state": "Uttar Pradesh",
+   "district": "Kanpur Nagar",
+   "market": "Kanpur",
+   "date": "2026-10-16",
+   "modal_price": 2370,
+   "arrivals": 386
+  },
+  {
+   "commodity": "Onion",
+   "state": "Uttar Pradesh",
+   "district": "Kanpur Nagar",
+   "market": "Kanpur",
+   "date": "2026-10-17",
+   "modal_price": 2410,
+   "arrivals": 216
+  },
+  {
+   "commodity": "Onion",
+   "state": "Uttar Pradesh",
+   "district": "Kanpur Nagar",
+   "market": "Kanpur",
+   "date": "2026-10-18",
+   "modal_price": 2390,
+   "arrivals": 145
+  },
+  {
+   "commodity": "Onion",
+   "state": "Uttar Pradesh",
+   "district": "Kanpur Nagar",
+   "market": "Kanpur",
+   "date": "2026-10-19",
+   "modal_price": 2420,
+   "arrivals": 182
+  },
+  {
+   "commodity": "Onion",
+   "state": "Uttar Pradesh",
+   "district": "Kanpur Nagar",
+   "market": "Kanpur",
+   "date": "2026-10-20",
+   "modal_price": 2410,
+   "arrivals": 105
+  },
+  {
+   "commodity": "Tomato",
+   "state": "Uttar Pradesh",
+   "district": "Kanpur Nagar",
+   "market": "Kanpur",
+   "date": "2026-10-14",
+   "modal_price": 2890,
+   "arrivals": 51
+  },
+  {
+   "commodity": "Tomato",
+   "state": "Uttar Pradesh",
+   "district": "Kanpur Nagar",
+   "market": "Kanpur",
+   "date": "2026-10-15",
+   "modal_price": 2880,
+   "arrivals": 295
+  },
+  {
+   "commodity": "Tomato",
+   "state": "Uttar Pradesh",
+   "district": "Kanpur Nagar",
+   "market": "Kanpur",
+   "date": "2026-10-16",
+   "modal_price": 2840,
+   "arrivals": 228
+  },
+  {
+   "commodity": "Tomato",
+   "state": "Uttar Pradesh",
+   "district": "Kanpur Nagar",
+   "market": "Kanpur",
+   "date": "2026-10-17",
+   "modal_price": 2800,
+   "arrivals": 370
+  },
+  {
+   "commodity": "Tomato",
+   "state": "Uttar Pradesh",
+   "district": "Kanpur Nagar",
+   "market": "Kanpur",
+   "date": "2026-10-18",
+   "modal_price": 2770,
+   "arrivals": 32
+  },
+  {
+   "commodity": "Tomato",
+   "state": "Uttar Pradesh",
+   "district": "Kanpur Nagar",
+   "market": "Kanpur",
+   "date": "2026-10-19",
+   "modal_price": 2770,
+   "arrivals": 107
+  },
+  {
+   "commodity": "Tomato",
+   "state": "Uttar Pradesh",
+   "district": "Kanpur Nagar",
+   "market": "Kanpur",
+   "date": "2026-10-20",
+   "modal_price": 2780,
+   "arrivals": 357
+  },
+  {
+   "commodity": "Wheat",
+   "state": "Madhya Pradesh",
+   "district": "Indore",
+   "market": "Indore",
+   "date": "2026-10-14",
+   "modal_price": 2500,
+   "arrivals": 181
+  },
+  {
+   "commodity": "Wheat",
+   "state": "Madhya Pradesh",
+   "district": "Indore",
+   "market": "Indore",
+   "date": "2026-10-15",
+   "modal_price": 2510,
+   "arrivals": 31
+  },
+  {
+   "commodity": "Wheat",
+   "state": "Madhya Pradesh",
+   "district": "Indore",
+   "market": "Indore",
+   "date": "2026-10-16",
+   "modal_price": 2510,
+   "arrivals": 260
+  },
+  {
+   "commodity": "Wheat",
+   "state": "Madhya Pradesh",
+   "district": "Indore",
+   "market": "Indore",
+   "date": "2026-10-17",
+   "modal_price": 2520,
+   "arrivals": 177
+  },
+  {
+   "commodity": "Wheat",
+   "state": "Madhya Pradesh",
+   "district": "Indore",
+   "market": "Indore",
+   "date": "2026-10-18",
+   "modal_price": 2540,
+   "arrivals": 251
+  },
+  {
+   "commodity": "Wheat",
+   "state": "Madhya Pradesh",
+   "district": "Indore",
+   "market": "Indore",
+   "date": "2026-10-19",
+   "modal_price": 2540,
+   "arrivals": 21
+  },
+  {
+   "commodity": "Wheat",
+   "state": "Madhya Pradesh",
+   "district": "Indore",
+   "market": "Indore",
+   "date": "2026-10-20",
+   "modal_price": 2560,
+   "arrivals": 247
+  },
+  {
+   "commodity": "Maize",
+   "state": "Madhya Pradesh",
+   "district": "Indore",
+   "market": "Indore",
+   "date": "2026-10-14",
+   "modal_price": null,
+   "arrivals": null
+  },
+  {
+   "commodity": "Maize",
+   "state": "Madhya Pradesh",
+   "district": "Indore",
+   "market": "Indore",
+   "date": "2026-10-15",
+   "modal_price": 2090,
+   "arrivals": 116
+  },
+  {
+   "commodity": "Maize",
+   "state": "Madhya Pradesh",
+   "district": "Indore",
+   "market": "Indore",
+   "date": "2026-10-16",
+   "modal_price": 2100,
+   "arrivals": 25
+  },
+  {
+   "commodity": "Maize",
+   "state": "Madhya Pradesh",
+   "district": "Indore",
+   "market": "Indore",
+   "date": "2026-10-17",
+   "modal_price": 2100,
+   "arrivals": 351
+  },
+  {
+   "commodity": "Maize",
+   "state": "Madhya Pradesh",
+   "district": "Indore",
+   "market": "Indore",
+   "date": "2026-10-18",
+   "modal_price": 2090,
+   "arrivals": 410
+  },
+  {
+   "commodity": "Maize",
+   "state": "Madhya Pradesh",
+   "district": "Indore",
+   "market": "Indore",
+   "date": "2026-10-19",
+   "modal_price": 2110,
+   "arrivals": 293
+  },
+  {
+   "commodity": "Maize",
+   "state": "Madhya Pradesh",
+   "district": "Indore",
+   "market": "Indore",
+   "date": "2026-10-20",
+   "modal_price": 2110,
+   "arrivals": 116
+  },
+  {
+   "commodity": "Mustard",
+   "state": "Madhya Pradesh",
+   "district": "Indore",
+   "market": "Indore",
+   "date": "2026-10-14",
+   "modal_price": 6030,
+   "arrivals": 81
+  },
+  {
+   "commodity": "Mustard",
+   "state": "Madhya Pradesh",
+   "district": "Indore",
+   "market": "Indore",
+   "date": "2026-10-15",
+   "modal_price": 6060,
+   "arrivals": 272
+  },
+  {
+   "commodity": "Mustard",
+   "state": "Madhya Pradesh",
+   "district": "Indore",
+   "market": "Indore",
+   "date": "2026-10-16",
+   "modal_price": 6040,
+   "arrivals": 65
+  },
+  {
+   "commodity": "Mustard",
+   "state": "Madhya Pradesh",
+   "district": "Indore",
+   "market": "Indore",
+   "date": "2026-10-17",
+   "modal_price": 6130,
+   "arrivals": 33
+  },
+  {
+   "commodity": "Mustard",
+   "state": "Madhya Pradesh",
+   "district": "Indore",
+   "market": "Indore",
+   "date": "2026-10-18",
+   "modal_price": 6210,
+   "arrivals": 268
+  },
+  {
+   "commodity": "Mustard",
+   "state": "Madhya Pradesh",
+   "district": "Indore",
+   "market": "Indore",
+   "date": "2026-10-19",
+   "modal_price": 6250,
+   "arrivals": 273
+  },
+  {
+   "commodity": "Mustard",
+   "state": "Madhya Pradesh",
+   "district": "Indore",
+   "market": "Indore",
+   "date": "2026-10-20",
+   "modal_price": 6230,
+   "arrivals": 250
+  },
+  {
+   "commodity": "Potato",
+   "state": "Madhya Pradesh",
+   "district": "Indore",
+   "market": "Indore",
+   "date": "2026-10-14",
+   "modal_price": 1680,
+   "arrivals": 140
+  },
+  {
+   "commodity": "Potato",
+   "state": "Madhya Pradesh",
+   "district": "Indore",
+   "market": "Indore",
+   "date": "2026-10-15",
+   "modal_price": 1680,
+   "arrivals": 317
+  },
+  {
+   "commodity": "Potato",
+   "state": "Madhya Pradesh",
+   "district": "Indore",
+   "market": "Indore",
+   "date": "2026-10-16",
+   "modal_price": 1660,
+   "arrivals": 247
+  },
+  {
+   "commodity": "Potato",
+   "state": "Madhya Pradesh",
+   "district": "Indore",
+   "market": "Indore",
+   "date": "2026-10-17",
+   "modal_price": 1670,
+   "arrivals": 354
+  },
+  {
+   "commodity": "Potato",
+   "state": "Madhya Pradesh",
+   "district": "Indore",
+   "market": "Indore",
+   "date": "2026-10-18",
+   "modal_price": 1650,
+   "arrivals": 239
+  },
+  {
+   "commodity": "Potato",
+   "state": "Madhya Pradesh",
+   "district": "Indore",
+   "market": "Indore",
+   "date": "2026-10-19",
+   "modal_price": 1650,
+   "arrivals": 151
+  },
+  {
+   "commodity": "Potato",
+   "state": "Madhya Pradesh",
+   "district": "Indore",
+   "market": "Indore",
+   "date": "2026-10-20",
+   "modal_price": null,
+   "arrivals": null
+  },
+  {
+   "commodity": "Onion",
+   "state": "Madhya Pradesh",
+   "district": "Indore",
+   "market": "Indore",
+   "date": "2026-10-14",
+   "modal_price": 2290,
+   "arrivals": 62
+  },
+  {
+   "commodity": "Onion",
+   "state": "Madhya Pradesh",
+   "district": "Indore",
+   "market": "Indore",
+   "date": "2026-10-15",
+   "modal_price": 2270,
+   "arrivals": 353
+  },
+  {
+   "commodity": "Onion",
+   "state": "Madhya Pradesh",
+   "district": "Indore",
+   "market": "Indore",
+   "date": "2026-10-16",
+   "modal_price": 2280,
+   "arrivals": 65
+  },
+  {
+   "commodity": "Onion",
+   "state": "Madhya Pradesh",
+   "district": "Indore",
+   "market": "Indore",
+   "date": "2026-10-17",
+   "modal_price": 2310,
+   "arrivals": 249
+  },
+  {
+   "commodity": "Onion",
+   "state": "Madhya Pradesh",
+   "district": "Indore",
+   "market": "Indore",
+   "date": "2026-10-18",
+   "modal_price": 2310,
+   "arrivals": 100
+  },
+  {
+   "commodity": "Onion",
+   "state": "Madhya Pradesh",
+   "district": "Indore",
+   "market": "Indore",
+   "date": "2026-10-19",
+   "modal_price": 2280,
+   "arrivals": 402
+  },
+  {
+   "commodity": "Onion",
+   "state": "Madhya Pradesh",
+   "district": "Indore",
+   "market": "Indore",
+   "date": "2026-10-20",
+   "modal_price": 2280,
+   "arrivals": 296
+  },
+  {
+   "commodity": "Tomato",
+   "state": "Madhya Pradesh",
+   "district": "Indore",
+   "market": "Indore",
+   "date": "2026-10-14",
+   "modal_price": 2710,
+   "arrivals": 186
+  },
+  {
+   "commodity": "Tomato",
+   "state": "Madhya Pradesh",
+   "district": "Indore",
+   "market": "Indore",
+   "date": "2026-10-15",
+   "modal_price": 2730,
+   "arrivals": 122
+  },
+  {
+   "commodity": "Tomato",
+   "state": "Madhya Pradesh",
+   "district": "Indore",
+   "market": "Indore",
+   "date": "2026-10-16",
+   "modal_price": 2760,
+   "arrivals": 126
+  },
+  {
+   "commodity": "Tomato",
+   "state": "Madhya Pradesh",
+   "district": "Indore",
+   "market": "Indore",
+   "date": "2026-10-17",
+   "modal_price": 2790,
+   "arrivals": 45
+  },
+  {
+   "commodity": "Tomato",
+   "state": "Madhya Pradesh",
+   "district": "Indore",
+   "market": "Indore",
+   "date": "2026-10-18",
+   "modal_price": 2820,
+   "arrivals": 260
+  },
+  {
+   "commodity": "Tomato",
+   "state": "Madhya Pradesh",
+   "district": "Indore",
+   "market": "Indore",
+   "date": "2026-10-19",
+   "modal_price": 2800,
+   "arrivals": 336
+  },
+  {
+   "commodity": "Tomato",
+   "state": "Madhya Pradesh",
+   "district": "Indore",
+   "market": "Indore",
+   "date": "2026-10-20",
+   "modal_price": 2760,
+   "arrivals": 162
+  },
+  {
+   "commodity": "Soyabean",
+   "state": "Madhya Pradesh",
+   "district": "Indore",
+   "market": "Indore",
+   "date": "2026-10-14",
+   "modal_price": 4710,
+   "arrivals": 230
+  },
+  {
+   "commodity": "Soyabean",
+   "state": "Madhya Pradesh",
+   "district": "Indore",
+   "market": "Indore",
+   "date": "2026-10-15",
+   "modal_price": 4760,
+   "arrivals": 52
+  },
+  {
+   "commodity": "Soyabean",
+   "state": "Madhya Pradesh",
+   "district": "Indore",
+   "market": "Indore",
+   "date": "2026-10-16",
+   "modal_price": 4690,
+   "arrivals": 61
+  },
+  {
+   "commodity": "Soyabean",
+   "state": "Madhya Pradesh",
+   "district": "Indore",
+   "market": "Indore",
+   "date": "2026-10-17",
+   "modal_price": 4680,
+   "arrivals": 62
+  },
+  {
+   "commodity": "Soyabean",
+   "state": "Madhya Pradesh",
+   "district": "Indore",
+   "market": "Indore",
+   "date": "2026-10-18",
+   "modal_price": 4690,
+   "arrivals": 396
+  },
+  {
+   "commodity": "Soyabean",
+   "state": "Madhya Pradesh",
+   "district": "Indore",
+   "market": "Indore",
+   "date": "2026-10-19",
+   "modal_price": null,
+   "arrivals": null
+  },
+  {
+   "commodity": "Soyabean",
+   "state": "Madhya Pradesh",
+   "district": "Indore",
+   "market": "Indore",
+   "date": "2026-10-20",
+   "modal_price": 4590,
+   "arrivals": 210
+  },
+  {
+   "commodity": "Wheat",
+   "state": "Madhya Pradesh",
+   "district": "Bhopal",
+   "market": "Bhopal",
+   "date": "2026-10-14",
+   "modal_price": 2420,
+   "arrivals": 173
+  },
+  {
+   "commodity": "Wheat",
+   "state": "Madhya Pradesh",
+   "district": "Bhopal",
+   "market": "Bhopal",
+   "date": "2026-10-15",
+   "modal_price": 2400,
+   "arrivals": 262
+  },
+  {
+   "commodity": "Wheat",
+   "state": "Madhya Pradesh",
+   "district": "Bhopal",
+   "market": "Bhopal",
+   "date": "2026-10-16",
+   "modal_price": 2410,
+   "arrivals": 273
+  },
+  {
+   "commodity": "Wheat",
+   "state": "Madhya Pradesh",
+   "district": "Bhopal",
+   "market": "Bhopal",
+   "date": "2026-10-17",
+   "modal_price": 2410,
+   "arrivals": 214
+  },
+  {
+   "commodity": "Wheat",
+   "state": "Madhya Pradesh",
+   "district": "Bhopal",
+   "market": "Bhopal",
+   "date": "2026-10-18",
+   "modal_price": 2390,
+   "arrivals": 265
+  },
+  {
+   "commodity": "Wheat",
+   "state": "Madhya Pradesh",
+   "district": "Bhopal",
+   "market": "Bhopal",
+   "date": "2026-10-19",
+   "modal_price": 2430,
+   "arrivals": 103
+  },
+  {
+   "commodity": "Wheat",
+   "state": "Madhya Pradesh",
+   "district": "Bhopal",
+   "market": "Bhopal",
+   "date": "2026-10-20",
+   "modal_price": 2450,
+   "arrivals": 400
+  },
+  {
+   "commodity": "Maize",
+   "state": "Madhya Pradesh",
+   "district": "Bhopal",
+   "market": "Bhopal",
+   "date": "2026-10-14",
+   "modal_price": 2200,
+   "arrivals": 160
+  },
+  {
+   "commodity": "Maize",
+   "state": "Madhya Pradesh",
+   "district": "Bhopal",
+   "market": "Bhopal",
+   "date": "2026-10-15",
+   "modal_price": 2200,
+   "arrivals": 274
+  },
+  {
+   "commodity": "Maize",
+   "state": "Madhya Pradesh",
+   "district": "Bhopal",
+   "market": "Bhopal",
+   "date": "2026-10-16",
+   "modal_price": 2220,
+   "arrivals": 246
+  },
+  {
+   "commodity": "Maize",
+   "state": "Madhya Pradesh",
+   "district": "Bhopal",
+   "market": "Bhopal",
+   "date": "2026-10-17",
+   "modal_price": null,
+   "arrivals": null
+  },
+  {
+   "commodity": "Maize",
+   "state": "Madhya Pradesh",
+   "district": "Bhopal",
+   "market": "Bhopal",
+   "date": "2026-10-18",
+   "modal_price": 2170,
+   "arrivals": 135
+  },
+  {
+   "commodity": "Maize",
+   "state": "Madhya Pradesh",
+   "district": "Bhopal",
+   "market": "Bhopal",
+   "date": "2026-10-19",
+   "modal_price": 2200,
+   "arrivals": 294
+  },
+  {
+   "commodity": "Maize",
+   "state": "Madhya Pradesh",
+   "district": "Bhopal",
+   "market": "Bhopal",
+   "date": "2026-10-20",
+   "modal_price": 2220,
+   "arrivals": 266
+  },
+  {
+   "commodity": "Mustard",
+   "state": "Madhya Pradesh",
+   "district": "Bhopal",
+   "market": "Bhopal",
+   "date": "2026-10-14",
+   "modal_price": 6450,
+   "arrivals": 305
+  },
+  {
+   "commodity": "Mustard",
+   "state": "Madhya Pradesh",
+   "district": "Bhopal",
+   "market": "Bhopal",
+   "date": "2026-10-15",
+   "modal_price": 6430,
+   "arrivals": 399
+  },
+  {
+   "commodity": "Mustard",
+   "state": "Madhya Pradesh",
+   "district": "Bhopal",
+   "market": "Bhopal",
+   "date": "2026-10-16",
+   "modal_price": 6340,
+   "arrivals": 41
+  },
+  {
+   "commodity": "Mustard",
+   "state": "Madhya Pradesh",
+   "district": "Bhopal",
+   "market": "Bhopal",
+   "date": "2026-10-17",
+   "modal_price": 6380,
+   "arrivals": 288
+  },
+  {
+   "commodity": "Mustard",
+   "state": "Madhya Pradesh",
+   "district": "Bhopal",
+   "market": "Bhopal",
+   "date": "2026-10-18",
+   "modal_price": 6450,
+   "arrivals": 388
+  },
+  {
+   "commodity": "Mustard",
+   "state": "Madhya Pradesh",
+   "district": "Bhopal",
+   "market": "Bhopal",
+   "date": "2026-10-19",
+   "modal_price": 6390,
+   "arrivals": 142
+  },
+  {
+   "commodity": "Mustard",
+   "state": "Madhya Pradesh",
+   "district": "Bhopal",
+   "market": "Bhopal",
+   "date": "2026-10-20",
+   "modal_price": 6390,
+   "arrivals": 118
+  },
+  {
+   "commodity": "Potato",
+   "state": "Madhya Pradesh",
+   "district": "Bhopal",
+   "market": "Bhopal",
+   "date": "2026-10-14",
+   "modal_price": 1620,
+   "arrivals": 59
+  },
+  {
+   "commodity": "Potato",
+   "state": "Madhya Pradesh",
+   "district": "Bhopal",
+   "market": "Bhopal",
+   "date": "2026-10-15",
+   "modal_price": 1610,
+   "arrivals": 103
+  },
+  {
+   "commodity": "Potato",
+   "state": "Madhya Pradesh",
+   "district": "Bhopal",
+   "market": "Bhopal",
+   "date": "2026-10-16",
+   "modal_price": 1620,
+   "arrivals": 45
+  },
+  {
+   "commodity": "Potato",
+   "state": "Madhya Pradesh",
+   "district": "Bhopal",
+   "market": "Bhopal",
+   "date": "2026-10-17",
+   "modal_price": 1620,
+   "arrivals": 46
+  },
+  {
+   "commodity": "Potato",
+   "state": "Madhya Pradesh",
+   "district": "Bhopal",
+   "market": "Bhopal",
+   "date": "2026-10-18",
+   "modal_price": 1610,
+   "arrivals": 287
+  },
+  {
+   "commodity": "Potato",
+   "state": "Madhya Pradesh",
+   "district": "Bhopal",
+   "market": "Bhopal",
+   "date": "2026-10-19",
+   "modal_price": 1620,
+   "arrivals": 349
+  },
+  {
+   "commodity": "Potato",
+   "state": "Madhya Pradesh",
+   "district": "Bhopal",
+   "market": "Bhopal",
+   "date": "2026-10-20",
+   "modal_price": 1630,
+   "arrivals": 151
+  },
+  {
+   "commodity": "Onion",
+   "state": "Madhya Pradesh",
+   "district": "Bhopal",
+   "market": "Bhopal",
+   "date": "2026-10-14",
+   "modal_price": 2380,
+   "arrivals": 217
+  },
+  {
+   "commodity": "Onion",
+   "state": "Madhya Pradesh",
+   "district": "Bhopal",
+   "market": "Bhopal",
+   "date": "2026-10-15",
+   "modal_price": 2370,
+   "arrivals": 158
+  },
+  {
+   "commodity": "Onion",
+   "state": "Madhya Pradesh",
+   "district": "Bhopal",
+   "market": "Bhopal",
+   "date": "2026-10-16",
+   "modal_price": 2390,
+   "arrivals": 203
+  },
+  {
+   "commodity": "Onion",
+   "state": "Madhya Pradesh",
+   "district": "Bhopal",
+   "market": "Bhopal",
+   "date": "2026-10-17",
+   "modal_price": 2420,
+   "arrivals": 41
+  },
+  {
+   "commodity": "Onion",
+   "state": "Madhya Pradesh",
+   "district": "Bhopal",
+   "market": "Bhopal",
+   "date": "2026-10-18",
+   "modal_price": null,
+   "arrivals": null
+  },
+  {
+   "commodity": "Onion",
+   "state": "Madhya Pradesh",
+   "district": "Bhopal",
+   "market": "Bhopal",
+   "date": "2026-10-19",
+   "modal_price": 2410,
+   "arrivals": 50
+  },
+  {
+   "commodity": "Onion",
+   "state": "Madhya Pradesh",
+   "district": "Bhopal",
+   "market": "Bhopal",
+   "date": "2026-10-20",
+   "modal_price": 2390,
+   "arrivals": 259
+  },
+  {
+   "commodity": "Tomato",
+   "state": "Madhya Pradesh",
+   "district": "Bhopal",
+   "market": "Bhopal",
+   "date": "2026-10-14",
+   "modal_price": 2870,
+   "arrivals": 102
+  },
+  {
+   "commodity": "Tomato",
+   "state": "Madhya Pradesh",
+   "district": "Bhopal",
+   "market": "Bhopal",
+   "date": "2026-10-15",
+   "modal_price": 2900,
+   "arrivals": 245
+  },
+  {
+   "commodity": "Tomato",
+   "state": "Madhya Pradesh",
+   "district": "Bhopal",
+   "market": "Bhopal",
+   "date": "2026-10-16",
+   "modal_price": 2920,
+   "arrivals": 159
+  },
+  {
+   "commodity": "Tomato",
+   "state": "Madhya Pradesh",
+   "district": "Bhopal",
+   "market": "Bhopal",
+   "date": "2026-10-17",
+   "modal_price": 2910,
+   "arrivals": 85
+  },
+  {
+   "commodity": "Tomato",
+   "state": "Madhya Pradesh",
+   "district": "Bhopal",
+   "market": "Bhopal",
+   "date": "2026-10-18",
+   "modal_price": 2880,
+   "arrivals": 86
+  },
+  {
+   "commodity": "Tomato",
+   "state": "Madhya Pradesh",
+   "district": "Bhopal",
+   "market": "Bhopal",
+   "date": "2026-10-19",
+   "modal_price": 2850,
+   "arrivals": 369
+  },
+  {
+   "commodity": "Tomato",
+   "state": "Madhya Pradesh",
+   "district": "Bhopal",
+   "market": "Bhopal",
+   "date": "2026-10-20",
+   "modal_price": null,
+   "arrivals": null
+  },
+  {
+   "commodity": "Soyabean",
+   "state": "Madhya Pradesh",
+   "district": "Bhopal",
+   "market": "Bhopal",
+   "date": "2026-10-14",
+   "modal_price": 4730,
+   "arrivals": 137
+  },
+  {
+   "commodity": "Soyabean",
+   "state": "Madhya Pradesh",
+   "district": "Bhopal",
+   "market": "Bhopal",
+   "date": "2026-10-15",
+   "modal_price": 4780,
+   "arrivals": 338
+  },
+  {
+   "commodity": "Soyabean",
+   "state": "Madhya Pradesh",
+   "district": "Bhopal",
+   "market": "Bhopal",
+   "date": "2026-10-16",
+   "modal_price": 4720,
+   "arrivals": 292
+  },
+  {
+   "commodity": "Soyabean",
+   "state": "Madhya Pradesh",
+   "district": "Bhopal",
+   "market": "Bhopal",
+   "date": "2026-10-17",
+   "modal_price": 4760,
+   "arrivals": 255
+  },
+  {
+   "commodity": "Soyabean",
+   "state": "Madhya Pradesh",
+   "district": "Bhopal",
+   "market": "Bhopal",
+   "date": "2026-10-18",
+   "modal_price": 4820,
+   "arrivals": 52
+  },
+  {
+   "commodity": "Soyabean",
+   "state": "Madhya Pradesh",
+   "district": "Bhopal",
+   "market": "Bhopal",
+   "date": "2026-10-19",
+   "modal_price": 4770,
+   "arrivals": 278
+  },
+  {
+   "commodity": "Soyabean",
+   "state": "Madhya Pradesh",
+   "district": "Bhopal",
+   "market": "Bhopal",
+   "date": "2026-10-20",
+   "modal_price": 4710,
+   "arrivals": 217
+  },
+  {
+   "commodity": "Wheat",
+   "state": "Madhya Pradesh",
+   "district": "Dewas",
+   "market": "Dewas",
+   "date": "2026-10-14",
+   "modal_price": null,
+   "arrivals": null
+  },
+  {
+   "commodity": "Wheat",
+   "state": "Madhya Pradesh",
+   "district": "Dewas",
+   "market": "Dewas",
+   "date": "2026-10-15",
+   "modal_price": 2480,
+   "arrivals": 207
+  },
+  {
+   "commodity": "Wheat",
+   "state": "Madhya Pradesh",
+   "district": "Dewas",
+   "market": "Dewas",
+   "date": "2026-10-16",
+   "modal_price": 2450,
+   "arrivals": 397
+  },
+  {
+   "commodity": "Wheat",
+   "state": "Madhya Pradesh",
+   "district": "Dewas",
+   "market": "Dewas",
+   "date": "2026-10-17",
+   "modal_price": 2480,
+   "arrivals": 391
+  },
+  {
+   "commodity": "Wheat",
+   "state": "Madhya Pradesh",
+   "district": "Dewas",
+   "market": "Dewas",
+   "date": "2026-10-18",
+   "modal_price": 2510,
+   "arrivals": 409
+  },
+  {
+   "commodity": "Wheat",
+   "state": "Madhya Pradesh",
+   "district": "Dewas",
+   "market": "Dewas",
+   "date": "2026-10-19",
+   "modal_price": 2480,
+   "arrivals": 48
+  },
+  {
+   "commodity": "Wheat",
+   "state": "Madhya Pradesh",
+   "district": "Dewas",
+   "market": "Dewas",
+   "date": "2026-10-20",
+   "modal_price": 2480,
+   "arrivals": 184
+  },
+  {
+   "commodity": "Maize",
+   "state": "Madhya Pradesh",
+   "district": "Dewas",
+   "market": "Dewas",
+   "date": "2026-10-14",
+   "modal_price": 2240,
+   "arrivals": 360
+  },
+  {
+   "commodity": "Maize",
+   "state": "Madhya Pradesh",
+   "district": "Dewas",
+   "market": "Dewas",
+   "date": "2026-10-15",
+   "modal_price": 2260,
+   "arrivals": 237
+  },
+  {
+   "commodity": "Maize",
+   "state": "Madhya Pradesh",
+   "district": "Dewas",
+   "market": "Dewas",
+   "date": "2026-10-16",
+   "modal_price": 2250,
+   "arrivals": 20
+  },
+  {
+   "commodity": "Maize",
+   "state": "Madhya Pradesh",
+   "district": "Dewas",
+   "market": "Dewas",
+   "date": "2026-10-17",
+   "modal_price": 2280,
+   "arrivals": 326
+  },
+  {
+   "commodity": "Maize",
+   "state": "Madhya Pradesh",
+   "district": "Dewas",
+   "market": "Dewas",
+   "date": "2026-10-18",
+   "modal_price": 2300,
+   "arrivals": 114
+  },
+  {
+   "commodity": "Maize",
+   "state": "Madhya Pradesh",
+   "district": "Dewas",
+   "market": "Dewas",
+   "date": "2026-10-19",
+   "modal_price": null,
+   "arrivals": null
+  },
+  {
+   "commodity": "Maize",
+   "state": "Madhya Pradesh",
+   "district": "Dewas",
+   "market": "Dewas",
+   "date": "2026-10-20",
+   "modal_price": 2270,
+   "arrivals": 84
+  },
+  {
+   "commodity": "Mustard",
+   "state": "Madhya Pradesh",
+   "district": "Dewas",
+   "market": "Dewas",
+   "date": "2026-10-14",
+   "modal_price": 6370,
+   "arrivals": 196
+  },
+  {
+   "commodity": "Mustard",
+   "state": "Madhya Pradesh",
+   "district": "Dewas",
+   "market": "Dewas",
+   "date": "2026-10-15",
+   "modal_price": 6450,
+   "arrivals": 323
+  },
+  {
+   "commodity": "Mustard",
+   "state": "Madhya Pradesh",
+   "district": "Dewas",
+   "market": "Dewas",
+   "date": "2026-10-16",
+   "modal_price": null,
+   "arrivals": null
+  },
+  {
+   "commodity": "Mustard",
+   "state": "Madhya Pradesh",
+   "district": "Dewas",
+   "market": "Dewas",
+   "date": "2026-10-17",
+   "modal_price": 6440,
+   "arrivals": 203
+  },
+  {
+   "commodity": "Mustard",
+   "state": "Madhya Pradesh",
+   "district": "Dewas",
+   "market": "Dewas",
+   "date": "2026-10-18",
+   "modal_price": 6480,
+   "arrivals": 374
+  },
+  {
+   "commodity": "Mustard",
+   "state": "Madhya Pradesh",
+   "district": "Dewas",
+   "market": "Dewas",
+   "date": "2026-10-19",
+   "modal_price": 6420,
+   "arrivals": 55
+  },
+  {
+   "commodity": "Mustard",
+   "state": "Madhya Pradesh",
+   "district": "Dewas",
+   "market": "Dewas",
+   "date": "2026-10-20",
+   "modal_price": 6490,
+   "arrivals": 317
+  },
+  {
+   "commodity": "Potato",
+   "state": "Madhya Pradesh",
+   "district": "Dewas",
+   "market": "Dewas",
+   "date": "2026-10-14",
+   "modal_price": 1680,
+   "arrivals": 230
+  },
+  {
+   "commodity": "Potato",
+   "state": "Madhya Pradesh",
+   "district": "Dewas",
+   "market": "Dewas",
+   "date": "2026-10-15",
+   "modal_price": 1690,
+   "arrivals": 325
+  },
+  {
+   "commodity": "Potato",
+   "state": "Madhya Pradesh",
+   "district": "Dewas",
+   "market": "Dewas",
+   "date": "2026-10-16",
+   "modal_price": 1670,
+   "arrivals": 161
+  },
+  {
+   "commodity": "Potato",
+   "state": "Madhya Pradesh",
+   "district": "Dewas",
+   "market": "Dewas",
+   "date": "2026-10-17",
+   "modal_price": 1650,
+   "arrivals": 104
+  },
+  {
+   "commodity": "Potato",
+   "state": "Madhya Pradesh",
+   "district": "Dewas",
+   "market": "Dewas",
+   "date": "2026-10-18",
+   "modal_price": 1660,
+   "arrivals": 212
+  },
+  {
+   "commodity": "Potato",
+   "state": "Madhya Pradesh",
+   "district": "Dewas",
+   "market": "Dewas",
+   "date": "2026-10-19",
+   "modal_price": 1670,
+   "arrivals": 119
+  },
+  {
+   "commodity": "Potato",
+   "state": "Madhya Pradesh",
+   "district": "Dewas",
+   "market": "Dewas",
+   "date": "2026-10-20",
+   "modal_price": 1660,
+   "arrivals": 357
+  },
+  {
+   "commodity": "Onion",
+   "state": "Madhya Pradesh",
+   "district": "Dewas",
+   "market": "Dewas",
+   "date": "2026-10-14",
+   "modal_price": 2310,
+   "arrivals": 99
+  },
+  {
+   "commodity": "Onion",
+   "state": "Madhya Pradesh",
+   "district": "Dewas",
+   "market": "Dewas",
+   "date": "2026-10-15",
+   "modal_price": 2280,
+   "arrivals": 272
+  },
+  {
+   "commodity": "Onion",
+   "state": "Madhya Pradesh",
+   "district": "Dewas",
+   "market": "Dewas",
+   "date": "2026-10-16",
+   "modal_price": 2270,
+   "arrivals": 252
+  },
+  {
+   "commodity": "Onion",
+   "state": "Madhya Pradesh",
+   "district": "Dewas",
+   "market": "Dewas",
+   "date": "2026-10-17",
+   "modal_price": 2270,
+   "arrivals": 42
+  },
+  {
+   "commodity": "Onion",
+   "state": "Madhya Pradesh",
+   "district": "Dewas",
+   "market": "Dewas",
+   "date": "2026-10-18",
+   "modal_price": 2300,
+   "arrivals": 132
+  },
+  {
+   "commodity": "Onion",
+   "state": "Madhya Pradesh",
+   "district": "Dewas",
+   "market": "Dewas",
+   "date": "2026-10-19",
+   "modal_price": 2330,
+   "arrivals": 193
+  },
+  {
+   "commodity": "Onion",
+   "state": "Madhya Pradesh",
+   "district": "Dewas",
+   "market": "Dewas",
+   "date": "2026-10-20",
+   "modal_price": 2350,
+   "arrivals": 225
+  },
+  {
+   "commodity": "Tomato",
+   "state": "Madhya Pradesh",
+   "district": "Dewas",
+   "market": "Dewas",
+   "date": "2026-10-14",
+   "modal_price": 2850,
+   "arrivals": 77
+  },
+  {
+   "commodity": "Tomato",
+   "state": "Madhya Pradesh",
+   "district": "Dewas",
+   "market": "Dewas",
+   "date": "2026-10-15",
+   "modal_price": 2820,
+   "arrivals": 141
+  },
+  {
+   "commodity": "Tomato",
+   "state": "Madhya Pradesh",
+   "district": "Dewas",
+   "market": "Dewas",
+   "date": "2026-10-16",
+   "modal_price": 2800,
+   "arrivals": 136
+  },
+  {
+   "commodity": "Tomato",
+   "state": "Madhya Pradesh",
+   "district": "Dewas",
+   "market": "Dewas",
+   "date": "2026-10-17",
+   "modal_price": 2830,
+   "arrivals": 308
+  },
+  {
+   "commodity": "Tomato",
+   "state": "Madhya Pradesh",
+   "district": "Dewas",
+   "market": "Dewas",
+   "date": "2026-10-18",
+   "modal_price": 2870,
+   "arrivals": 107
+  },
+  {
+   "commodity": "Tomato",
+   "state": "Madhya Pradesh",
+   "district": "Dewas",
+   "market": "Dewas",
+   "date": "2026-10-19",
+   "modal_price": 2870,
+   "arrivals": 192
+  },
+  {
+   "commodity": "Tomato",
+   "state": "Madhya Pradesh",
+   "district": "Dewas",
+   "market": "Dewas",
+   "date": "2026-10-20",
+   "modal_price": 2850,
+   "arrivals": 247
+  },
+  {
+   "commodity": "Soyabean",
+   "state": "Madhya Pradesh",
+   "district": "Dewas",
+   "market": "Dewas",
+   "date": "2026-10-14",
+   "modal_price": 4580,
+   "arrivals": 252
+  },
+  {
+   "commodity": "Soyabean",
+   "state": "Madhya Pradesh",
+   "district": "Dewas",
+   "market": "Dewas",
+   "date": "2026-10-15",
+   "modal_price": 4630,
+   "arrivals": 419
+  },
+  {
+   "commodity": "Soyabean",
+   "state": "Madhya Pradesh",
+   "district": "Dewas",
+   "market": "Dewas",
+   "date": "2026-10-16",
+   "modal_price": 4660,
+   "arrivals": 229
+  },
+  {
+   "commodity": "Soyabean",
+   "state": "Madhya Pradesh",
+   "district": "Dewas",
+   "market": "Dewas",
+   "date": "2026-10-17",
+   "modal_price": 4600,
+   "arrivals": 215
+  },
+  {
+   "commodity": "Soyabean",
+   "state": "Madhya Pradesh",
+   "district": "Dewas",
+   "market": "Dewas",
+   "date": "2026-10-18",
+   "modal_price": 4660,
+   "arrivals": 287
+  },
+  {
+   "commodity": "Soyabean",
+   "state": "Madhya Pradesh",
+   "district": "Dewas",
+   "market": "Dewas",
+   "date": "2026-10-19",
+   "modal_price": 4630,
+   "arrivals": 132
+  },
+  {
+   "commodity": "Soyabean",
+   "state": "Madhya Pradesh",
+   "district": "Dewas",
+   "market": "Dewas",
+   "date": "2026-10-20",
+   "modal_price": 4670,
+   "arrivals": 230
+  },
+  {
+   "commodity": "Wheat",
+   "state": "Madhya Pradesh",
+   "district": "Ujjain",
+   "market": "Ujjain",
+   "date": "2026-10-14",
+   "modal_price": 2550,
+   "arrivals": 369
+  },
+  {
+   "commodity": "Wheat",
+   "state": "Madhya Pradesh",
+   "district": "Ujjain",
+   "market": "Ujjain",
+   "date": "2026-10-15",
+   "modal_price": 2570,
+   "arrivals": 355
+  },
+  {
+   "commodity": "Wheat",
+   "state": "Madhya Pradesh",
+   "district": "Ujjain",
+   "market": "Ujjain",
+   "date": "2026-10-16",
+   "modal_price": 2570,
+   "arrivals": 53
+  },
+  {
+   "commodity": "Wheat",
+   "state": "Madhya Pradesh",
+   "district": "Ujjain",
+   "market": "Ujjain",
+   "date": "2026-10-17",
+   "modal_price": 2540,
+   "arrivals": 67
+  },
+  {
+   "commodity": "Wheat",
+   "state": "Madhya Pradesh",
+   "district": "Ujjain",
+   "market": "Ujjain",
+   "date": "2026-10-18",
+   "modal_price": 2550,
+   "arrivals": 35
+  },
+  {
+   "commodity": "Wheat",
+   "state": "Madhya Pradesh",
+   "district": "Ujjain",
+   "market": "Ujjain",
+   "date": "2026-10-19",
+   "modal_price": null,
+   "arrivals": null
+  },
+  {
+   "commodity": "Wheat",
+   "state": "Madhya Pradesh",
+   "district": "Ujjain",
+   "market": "Ujjain",
+   "date": "2026-10-20",
+   "modal_price": 2510,
+   "arrivals": 188
+  },
+  {
+   "commodity": "Maize",
+   "state": "Madhya Pradesh",
+   "district": "Ujjain",
+   "market": "Ujjain",
+   "date": "2026-10-14",
+   "modal_price": 2150,
+   "arrivals": 322
+  },
+  {
+   "commodity": "Maize",
+   "state": "Madhya Pradesh",
+   "district": "Ujjain",
+   "market": "Ujjain",
+   "date": "2026-10-15",
+   "modal_price": 2170,
+   "arrivals": 374
+  },
+  {
+   "commodity": "Maize",
+   "state": "Madhya Pradesh",
+   "district": "Ujjain",
+   "market": "Ujjain",
+   "date": "2026-10-16",
+   "modal_price": 2160,
+   "arrivals": 210
+  },
+  {
+   "commodity": "Maize",
+   "state": "Madhya Pradesh",
+   "district": "Ujjain",
+   "market": "Ujjain",
+   "date": "2026-10-17",
+   "modal_price": 2150,
+   "arrivals": 173
+  },
+  {
+   "commodity": "Maize",
+   "state": "Madhya Pradesh",
+   "district": "Ujjain",
+   "market": "Ujjain",
+   "date": "2026-10-18",
+   "modal_price": 2150,
+   "arrivals": 332
+  },
+  {
+   "commodity": "Maize",
+   "state": "Madhya Pradesh",
+   "district": "Ujjain",
+   "market": "Ujjain",
+   "date": "2026-10-19",
+   "modal_price": 2140,
+   "arrivals": 292
+  },
+  {
+   "commodity": "Maize",
+   "state": "Madhya Pradesh",
+   "district": "Ujjain",
+   "market": "Ujjain",
+   "date": "2026-10-20",
+   "modal_price": 2140,
+   "arrivals": 354
+  },
+  {
+   "commodity": "Mustard",
+   "state": "Madhya Pradesh",
+   "district": "Ujjain",
+   "market": "Ujjain",
+   "date": "2026-10-14",
+   "modal_price": 5980,
+   "arrivals": 90
+  },
+  {
+   "commodity": "Mustard",
+   "state": "Madhya Pradesh",
+   "district": "Ujjain",
+   "market": "Ujjain",
+   "date": "2026-10-15",
+   "modal_price": 5930,
+   "arrivals": 235
+  },
+  {
+   "commodity": "Mustard",
+   "state": "Madhya Pradesh",
+   "district": "Ujjain",
+   "market": "Ujjain",
+   "date": "2026-10-16",
+   "modal_price": 5900,
+   "arrivals": 237
+  },
+  {
+   "commodity": "Mustard",
+   "state": "Madhya Pradesh",
+   "district": "Ujjain",
+   "market": "Ujjain",
+   "date": "2026-10-17",
+   "modal_price": 5890,
+   "arrivals": 415
+  },
+  {
+   "commodity": "Mustard",
+   "state": "Madhya Pradesh",
+   "district": "Ujjain",
+   "market": "Ujjain",
+   "date": "2026-10-18",
+   "modal_price": 5830,
+   "arrivals": 234
+  },
+  {
+   "commodity": "Mustard",
+   "state": "Madhya Pradesh",
+   "district": "Ujjain",
+   "market": "Ujjain",
+   "date": "2026-10-19",
+   "modal_price": null,
+   "arrivals": null
+  },
+  {
+   "commodity": "Mustard",
+   "state": "Madhya Pradesh",
+   "district": "Ujjain",
+   "market": "Ujjain",
+   "date": "2026-10-20",
+   "modal_price": 5740,
+   "arrivals": 250
+  },
+  {
+   "commodity": "Potato",
+   "state": "Madhya Pradesh",
+   "district": "Ujjain",
+   "market": "Ujjain",
+   "date": "2026-10-14",
+   "modal_price": 1700,
+   "arrivals": 409
+  },
+  {
+   "commodity": "Potato",
+   "state": "Madhya Pradesh",
+   "district": "Ujjain",
+   "market": "Ujjain",
+   "date": "2026-10-15",
+   "modal_price": 1690,
+   "arrivals": 253
+  },
+  {
+   "commodity": "Potato",
+   "state": "Madhya Pradesh",
+   "district": "Ujjain",
+   "market": "Ujjain",
+   "date": "2026-10-16",
+   "modal_price": 1700,
+   "arrivals": 261
+  },
+  {
+   "commodity": "Potato",
+   "state": "Madhya Pradesh",
+   "district": "Ujjain",
+   "market": "Ujjain",
+   "date": "2026-10-17",
+   "modal_price": 1700,
+   "arrivals": 40
+  },
+  {
+   "commodity": "Potato",
+   "state": "Madhya Pradesh",
+   "district": "Ujjain",
+   "market": "Ujjain",
+   "date": "2026-10-18",
+   "modal_price": null,
+   "arrivals": null
+  },
+  {
+   "commodity": "Potato",
+   "state": "Madhya Pradesh",
+   "district": "Ujjain",
+   "market": "Ujjain",
+   "date": "2026-10-19",
+   "modal_price": 1720,
+   "arrivals": 96
+  },
+  {
+   "commodity": "Potato",
+   "state": "Madhya Pradesh",
+   "district": "Ujjain",
+   "market": "Ujjain",
+   "date": "2026-10-20",
+   "modal_price": 1720,
+   "arrivals": 406
+  },
+  {
+   "commodity": "Onion",
+   "state": "Madhya Pradesh",
+   "district": "Ujjain",
+   "market": "Ujjain",
+   "date": "2026-10-14",
+   "modal_price": 2240,
+   "arrivals": 194
+  },
+  {
+   "commodity": "Onion",
+   "state": "Madhya Pradesh",
+   "district": "Ujjain",
+   "market": "Ujjain",
+   "date": "2026-10-15",
+   "modal_price": null,
+   "arrivals": null
+  },
+  {
+   "commodity": "Onion",
+   "state": "Madhya Pradesh",
+   "district": "Ujjain",
+   "market": "Ujjain",
+   "date": "2026-10-16",
+   "modal_price": 2260,
+   "arrivals": 159
+  },
+  {
+   "commodity": "Onion",
+   "state": "Madhya Pradesh",
+   "district": "Ujjain",
+   "market": "Ujjain",
+   "date": "2026-10-17",
+   "modal_price": 2290,
+   "arrivals": 84
+  },
+  {
+   "commodity": "Onion",
+   "state": "Madhya Pradesh",
+   "district": "Ujjain",
+   "market": "Ujjain",
+   "date": "2026-10-18",
+   "modal_price": null,
+   "arrivals": null
+  },
+  {
+   "commodity": "Onion",
+   "state": "Madhya Pradesh",
+   "district": "Ujjain",
+   "market": "Ujjain",
+   "date": "2026-10-19",
+   "modal_price": 2290,
+   "arrivals": 73
+  },
+  {
+   "commodity": "Onion",
+   "state": "Madhya Pradesh",
+   "district": "Ujjain",
+   "market": "Ujjain",
+   "date": "2026-10-20",
+   "modal_price": 2280,
+   "arrivals": 180
+  },
+  {
+   "commodity": "Tomato",
+   "state": "Madhya Pradesh",
+   "district": "Ujjain",
+   "market": "Ujjain",
+   "date": "2026-10-14",
+   "modal_price": 2780,
+   "arrivals": 68
+  },
+  {
+   "commodity": "Tomato",
+   "state": "Madhya Pradesh",
+   "district": "Ujjain",
+   "market": "Ujjain",
+   "date": "2026-10-15",
+   "modal_price": 2800,
+   "arrivals": 246
+  },
+  {
+   "commodity": "Tomato",
+   "state": "Madhya Pradesh",
+   "district": "Ujjain",
+   "market": "Ujjain",
+   "date": "2026-10-16",
+   "modal_price": 2800,
+   "arrivals": 379
+  },
+  {
+   "commodity": "Tomato",
+   "state": "Madhya Pradesh",
+   "district": "Ujjain",
+   "market": "Ujjain",
+   "date": "2026-10-17",
+   "modal_price": 2800,
+   "arrivals": 146
+  },
+  {
+   "commodity": "Tomato",
+   "state": "Madhya Pradesh",
+   "district": "Ujjain",
+   "market": "Ujjain",
+   "date": "2026-10-18",
+   "modal_price": null,
+   "arrivals": null
+  },
+  {
+   "commodity": "Tomato",
+   "state": "Madhya Pradesh",
+   "district": "Ujjain",
+   "market": "Ujjain",
+   "date": "2026-10-19",
+   "modal_price": 2810,
+   "arrivals": 257
+  },
+  {
+   "commodity": "Tomato",
+   "state": "Madhya Pradesh",
+   "district": "Ujjain",
+   "market": "Ujjain",
+   "date": "2026-10-20",
+   "modal_price": 2780,
+   "arrivals": 293
+  },
+  {
+   "commodity": "Soyabean",
+   "state": "Madhya Pradesh",
+   "district": "Ujjain",
+   "market": "Ujjain",
+   "date": "2026-10-14",
+   "modal_price": 4610,
+   "arrivals": 194
+  },
+  {
+   "commodity": "Soyabean",
+   "state": "Madhya Pradesh",
+   "district": "Ujjain",
+   "market": "Ujjain",
+   "date": "2026-10-15",
+   "modal_price": 4670,
+   "arrivals": 392
+  },
+  {
+   "commodity": "Soyabean",
+   "state": "Madhya Pradesh",
+   "district": "Ujjain",
+   "market": "Ujjain",
+   "date": "2026-10-16",
+   "modal_price": null,
+   "arrivals": null
+  },
+  {
+   "commodity": "Soyabean",
+   "state": "Madhya Pradesh",
+   "district": "Ujjain",
+   "market": "Ujjain",
+   "date": "2026-10-17",
+   "modal_price": 4700,
+   "arrivals": 123
+  },
+  {
+   "commodity": "Soyabean",
+   "state": "Madhya Pradesh",
+   "district": "Ujjain",
+   "market": "Ujjain",
+   "date": "2026-10-18",
+   "modal_price": 4710,
+   "arrivals": 284
+  },
+  {
+   "commodity": "Soyabean",
+   "state": "Madhya Pradesh",
+   "district": "Ujjain",
+   "market": "Ujjain",
+   "date": "2026-10-19",
+   "modal_price": 4680,
+   "arrivals": 199
+  },
+  {
+   "commodity": "Soyabean",
+   "state": "Madhya Pradesh",
+   "district": "Ujjain",
+   "market": "Ujjain",
+   "date": "2026-10-20",
+   "modal_price": 4700,
+   "arrivals": 117
+  }
+ ]
+}

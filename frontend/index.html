@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="hi">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>आज का भाव</title>
+  <meta name="description" content="Mandi price checker for farmers. Works offline. Hindi first.">
+  <meta name="theme-color" content="#14532D">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="icons/Rupee.webp" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="icons/Rupee.webp">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div class="app">
+
+    <div class="fail" id="fail" hidden>
+      <b>ऐप नहीं चल पाया।</b> फ़ाइल को सीधे खोलने से यह नहीं चलता। <code>start-windows.bat</code> पर डबल-क्लिक करें, या
+      फ़ोल्डर में <code>python3 -m http.server</code> चलाकर <code>localhost:8000</code> खोलें.<br>
+      <b>The app could not start.</b> It does not run when opened as a plain file. Double-click
+      <code>start-windows.bat</code>, or run <code>python3 -m http.server</code> in this folder and open
+      <code>localhost:8000</code>.
+    </div>
+
+    <header class="top">
+      <div class="brand">
+        <h1 id="appName">आज का भाव</h1>
+        <p id="tagline">आज मंडी में क्या भाव है?</p>
+      </div>
+      <div class="lang" role="group" aria-label="भाषा / Language">
+        <button type="button" data-lang="hi" aria-pressed="true">हिन्दी</button>
+        <button type="button" data-lang="en" aria-pressed="false">English</button>
+      </div>
+    </header>
+
+    <div class="notes" id="notes" aria-live="polite"></div>
+
+    <main class="layout" id="main">
+
+      <section class="pick" aria-labelledby="cropLabel">
+        <h2 class="label" id="cropLabel">फसल चुनें</h2>
+        <div class="crops" id="crops"></div>
+        <div class="geo">
+          <div><label class="label" for="state" id="stateLabel">अपना राज्य</label>
+            <div class="select"><select id="state"></select></div>
+          </div>
+          <div><label class="label" for="district" id="districtLabel">अपना ज़िला</label>
+            <div class="select"><select id="district"></select></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="rate-area" aria-live="polite" id="rateArea"></section>
+
+      <section class="mandis" aria-labelledby="nearbyTitle">
+        <div class="mandis__head">
+          <h2 id="nearbyTitle">आसपास की मंडियाँ</h2>
+          <p id="nearbyHint">ऊँचे भाव से नीचे की ओर</p>
+        </div>
+        <ol class="list" id="list"></ol>
+      </section>
+
+      <section class="trend-area" id="trendArea"></section>
+
+    </main>
+
+    <footer class="foot">
+      <p id="source"></p>
+      <p id="modalNote"></p>
+      <p id="persistNote" hidden></p>
+      <button type="button" class="install" id="install" hidden></button>
+    </footer>
+
+  </div>
+
+  <dialog class="crop-dialog" id="cropDialog">
+    <div class="crop-dialog__head">
+      <h2 id="cropDialogTitle">All crops</h2>
+      <button type="button" class="crop-dialog__close" id="cropDialogClose" aria-label="Close">&times;</button>
+    </div>
+    <input class="crop-dialog__search" id="cropSearch" type="search" autocomplete="off" placeholder="Search crops">
+    <ul class="crop-dialog__list" id="cropResults"></ul>
+    <p class="crop-dialog__empty" id="cropEmpty" hidden></p>
+  </dialog>
+
+  <noscript>
+    <p style="padding:24px;font:18px/1.5 sans-serif">इस ऐप को चलाने के लिए JavaScript चालू करें. This app needs
+      JavaScript.</p>
+  </noscript>
+  <script>
+    // If the app has not started after 2.5 s (usually: opened as file://), say so instead of showing a dead page.
+    setTimeout(function () { if (!document.body.dataset.ready) document.getElementById('fail').hidden = false; }, 2500);
+  </script>
+  <script type="module" src="app.js"></script>
+</body>
+
+</html>
